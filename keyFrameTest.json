@@ -1,0 +1,637 @@
+{
+  "outputPath": "D:\\Code\\Project\\qs_video_render_server\\qs_video_server\\public\\workspace\\output.mp4",
+  "width": 1920,
+  "height": 1080,
+  "startTime": 0,
+  "endTime": 6,
+  "stepTime": 0.033,
+  "fps": 30,
+  "mBitRate": 7.8125,
+  "isDebug": true,
+  "tracks": [
+    {
+      "type": "text",
+      "id": "7af768c5-6b16-47a2-ad22-4e574cdd122d",
+      "lock": false,
+      "visible": true,
+      "sequences": [
+        {
+          "adjust": {
+            "rotate": 0,
+            "opacity": 1,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "transform": {
+              "x": -0.03194034670541788,
+              "y": 0.29059452688850723
+            },
+            "lockAspectRatio": true,
+            "aspectRatio": 1
+          },
+          "type": "text",
+          "id": "0c17fa52-0501-458b-9f8d-cb81fb16efb6",
+          "timer": {
+            "start": 0,
+            "duration": 1,
+            "offset": 0,
+            "originalDuration": 6000,
+            "frameRate": 30,
+            "frameMs": 33.333333333333336,
+            "rate": 1
+          },
+          "plugins": [
+            {
+              "version": "1.0.0",
+              "name": "描边",
+              "namespace": "plugin-effect-outline",
+              "path": "https://ad.rongyi.com:9225/src/plugin/effect/Outline/index.tsx?2912014",
+              "previewPath": "https://ad.rongyi.com:9225/src/plugin/effect/Outline/preview.jpg",
+              "previewAniPath": "https://ad.rongyi.com:9225/src/plugin/effect/Outline/previewAni.gif",
+              "control": {
+                "size": 15,
+                "color": "#2f9686"
+              },
+              "keyframe1": {},
+              "keyframe": {
+                "control.color": [
+                  {
+                    "type": "linear",
+                    "curveType": "",
+                    "controls": [],
+                    "offset": 166.66666666666669,
+                    "value": "#2f9686"
+                  }
+                ]
+              },
+              "id": "8a223216-4e2e-489f-83b8-c54480b00b23"
+            }
+          ],
+          "resource": {
+            "id": "01520554-4f0c-41ae-8b12-4aae7c63dc9e",
+            "width": 100,
+            "height": 100,
+            "name": "",
+            "path": "",
+            "categorize": 0,
+            "type": "text",
+            "text": "默认文本",
+            "align": "center",
+            "color": "#ffffff",
+            "lineHeight": 1,
+            "letterSpacing": 0,
+            "fontFamily": "DouyinSansBold",
+            "fontSize": 180,
+            "fontStyle": "normal",
+            "strokeEnabled": true,
+            "strokeColor": "#000000",
+            "strokeWidth": 12,
+            "fontFamilyName": "DouyinSansBold.otf",
+            "absolutePath": "D:\\Code\\Project\\qs_video_render_server\\qs_video_server\\public\\fileCache\\32212d6cfa74faceb716b833dd189336725db28fa1fd3bff6e5c2c61a5c68c45.otf"
+          },
+          "keyframe": {
+            "adjust.scale.x": [
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 400,
+                "value": 1
+              },
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 1133.3333333333335,
+                "value": 0.59
+              },
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 2133.3333333333335,
+                "value": 1.03
+              },
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 2933.3333333333335,
+                "value": 0.45
+              },
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 3933.3333333333335,
+                "value": 1.03
+              }
+            ],
+            "adjust.scale.y": [
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 400,
+                "value": 1
+              },
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 1133.3333333333335,
+                "value": 0.59
+              },
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 2133.3333333333335,
+                "value": 1.03
+              },
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 2933.3333333333335,
+                "value": 0.45
+              },
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 3933.3333333333335,
+                "value": 1.03
+              }
+            ],
+            "adjust.rotate": [
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 266.6666666666667,
+                "value": 0
+              },
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 3566.666666666667,
+                "value": 360
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "graphic",
+      "id": "889f242e-d44f-4ce6-9c7c-981cb1a00f5a",
+      "lock": false,
+      "visible": true,
+      "audioDisable": false,
+      "sequences": [
+        {
+          "adjust": {
+            "rotate": 0,
+            "opacity": 1,
+            "scale": {
+              "x": 0.4173517333393394,
+              "y": 0.4173517333393394
+            },
+            "transform": {
+              "x": 0.4158804621666232,
+              "y": -0.2490834853618278
+            },
+            "lockAspectRatio": true,
+            "aspectRatio": 1
+          },
+          "type": "graphic",
+          "id": "a4451c6b-609e-473f-8005-8665ee1e8de3",
+          "timer": {
+            "start": 0,
+            "duration": 1,
+            "offset": 0,
+            "originalDuration": 5600,
+            "frameRate": 30,
+            "frameMs": 0.005952380952380953,
+            "rate": 1
+          },
+          "plugins": [
+            {
+              "version": "1.0.0",
+              "name": "描边",
+              "namespace": "plugin-effect-outline",
+              "path": "https://ad.rongyi.com:9225/src/plugin/effect/Outline/index.tsx?2911988",
+              "previewPath": "https://ad.rongyi.com:9225/src/plugin/effect/Outline/preview.jpg",
+              "previewAniPath": "https://ad.rongyi.com:9225/src/plugin/effect/Outline/previewAni.gif",
+              "control": {
+                "size": 40,
+                "color": "#1ca95f"
+              },
+              "keyframe": {},
+              "id": "5a574ea4-bc52-4018-bcec-acca0473b425"
+            }
+          ],
+          "resource": {
+            "id": "972f3d5a-3dd4-46d9-aeb6-4b29181acdb9",
+            "name": "f4a2a3a3a99c420ca81aaa7b8e6dc2cb.mp4",
+            "path": "https://buorgcostest.rongyi.com/video_editor/resource/1747191509214/f4a2a3a3a99c420ca81aaa7b8e6dc2cb.mp4",
+            "type": "video",
+            "categorize": 0,
+            "width": 1080,
+            "height": 1920,
+            "duration": 5600,
+            "frameRate": 30,
+            "thumbnailPath": "https://buorgcostest.rongyi.com/video_editor/thumbnail/1747191511272/41854j05.png",
+            "previewPath": "https://buorgcostest.rongyi.com/video_editor/thumbnail/1747191512824/1548o6cv.png",
+            "firstFramePath": "https://buorgcostest.rongyi.com/video_editor/thumbnail/1747191511272/41854j05.png",
+            "audios": [],
+            "rotate": 0,
+            "previewCount": 1,
+            "absolutePath": "D:\\Code\\Project\\qs_video_render_server\\qs_video_server\\public\\fileCache\\c31adb930129b652450ddff3b8e3795bee97899650633e1dda050d0e130a116c.mp4"
+          },
+          "audio": {
+            "index": 0,
+            "volume": 1
+          },
+          "keyframe": {
+            "adjust.transform.x": [
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 366.6666666666667,
+                "value": -0.400312744331509
+              },
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 5000,
+                "value": 0.4158804621666232
+              }
+            ],
+            "adjust.transform.y": [
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 366.6666666666667,
+                "value": -0.2490834853618278
+              },
+              {
+                "type": "linear",
+                "curveType": "",
+                "controls": [],
+                "offset": 5000,
+                "value": -0.2490834853618278
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "graphic",
+      "id": "5982d748-8ea2-47ad-b43f-9d1a859b6c90",
+      "lock": false,
+      "visible": true,
+      "audioDisable": false,
+      "sequences": [
+        {
+          "adjust": {
+            "rotate": 0,
+            "opacity": 1,
+            "scale": {
+              "x": 1.2549301336121246,
+              "y": 1.2549301336121246
+            },
+            "transform": {
+              "x": -0.014477174897849021,
+              "y": 0
+            },
+            "lockAspectRatio": true,
+            "aspectRatio": 1
+          },
+          "type": "graphic",
+          "id": "9d2524a6-942d-497b-89e9-cbdcc065965d",
+          "timer": {
+            "start": 0,
+            "duration": 1,
+            "offset": 0,
+            "originalDuration": 6000,
+            "frameRate": 30,
+            "frameMs": 33.333333333333336,
+            "rate": 1
+          },
+          "plugins": [
+            {
+              "version": "1.0.0",
+              "name": "色调饱和度",
+              "namespace": "plugin-adjust-hue-saturation",
+              "path": "https://ad.rongyi.com:9225/src/plugin/adjust/HueSaturation/index.tsx?2911985",
+              "previewPath": "https://ad.rongyi.com:9225/src/plugin/adjust/HueSaturation/preview.jpg",
+              "previewAniPath": "https://ad.rongyi.com:9225/src/plugin/adjust/HueSaturation/previewAni.gif",
+              "control": {
+                "hue": -1,
+                "saturation": 0
+              },
+              "keyframe": {
+                "control.hue": [
+                  {
+                    "type": "linear",
+                    "curveType": "",
+                    "controls": [],
+                    "offset": 0,
+                    "value": -0.99
+                  },
+                  {
+                    "type": "linear",
+                    "curveType": "",
+                    "controls": [],
+                    "offset": 2833.3333333333335,
+                    "value": 1
+                  },
+                  {
+                    "type": "linear",
+                    "curveType": "",
+                    "controls": [],
+                    "offset": 5633.333333333334,
+                    "value": -1
+                  }
+                ]
+              },
+              "id": "419df1c1-7a99-451b-b46b-732e1c2843b3"
+            }
+          ],
+          "resource": {
+            "id": "80f88849-23ea-4ff8-beff-9566884f77b0",
+            "name": "c37f0a2311d94d8fb9d69bddf9e553e1.jpeg",
+            "path": "https://buorgcostest.rongyi.com/video_editor/resource/1747191509015/c37f0a2311d94d8fb9d69bddf9e553e1.jpeg",
+            "type": "image",
+            "categorize": 0,
+            "width": 3000,
+            "height": 2000,
+            "thumbnailPath": "https://buorgcostest.rongyi.com/video_editor/thumbnail/1747191510239/st52vz4p.png",
+            "absolutePath": "D:\\Code\\Project\\qs_video_render_server\\qs_video_server\\public\\fileCache\\9c24cf3651cafb736878276adbf1a07b84fe360122aee827ef651d778eb63c58.jpeg"
+          },
+          "keyframe": {}
+        }
+      ]
+    }
+  ],
+  "materialData": {
+    "materialPasses": {
+      "9d2524a6-942d-497b-89e9-cbdcc065965d": {
+        "passName": "HueSaturation_9d2524a6-942d-497b-89e9-cbdcc065965d_plugin_0",
+        "renderTarget": {
+          "name": "HueSaturation_9d2524a6-942d-497b-89e9-cbdcc065965d_plugin_0",
+          "width": 3000,
+          "widthExpress": "sourceWidth",
+          "height": 2000,
+          "heightExpress": "sourceHeight"
+        },
+        "vertexShader": "44bf1bc4",
+        "fragmentShader": "4092a40c",
+        "attributeBuffer": "bufferResourceId:ndcBuffer",
+        "uniforms": {
+          "u_texture": {
+            "type": "sampler2D",
+            "value": "textureResourceId:9d2524a6-942d-497b-89e9-cbdcc065965d_80f88849-23ea-4ff8-beff-9566884f77b0"
+          },
+          "hue": {
+            "type": "float",
+            "value": -0.99,
+            "express": "control_hue"
+          },
+          "saturation": {
+            "type": "float",
+            "value": 0,
+            "express": "control_saturation"
+          }
+        }
+      },
+      "a4451c6b-609e-473f-8005-8665ee1e8de3": {
+        "passName": "OutlineFill_a4451c6b-609e-473f-8005-8665ee1e8de3_plugin_0",
+        "renderTarget": {
+          "name": "OutlineFill_a4451c6b-609e-473f-8005-8665ee1e8de3_plugin_0",
+          "width": 1160,
+          "widthExpress": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;outlineRenderTargetWidth",
+          "height": 2000,
+          "heightExpress": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;outlineRenderTargetHeight"
+        },
+        "vertexShader": "7d9a1e7d",
+        "fragmentShader": "940becd2",
+        "attributeBuffer": "bufferResourceId:ndcBuffer",
+        "uniforms": {
+          "u_uvTransform": {
+            "type": "vec4",
+            "value": [
+              -0.03703703703703704,
+              -0.020833333333333336,
+              1.0740740740740742,
+              1.0416666666666667
+            ],
+            "express": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;[uvOffsetX, uvOffsetY, uvScaleX, uvScaleY]"
+          },
+          "u_srcTexture": {
+            "type": "sampler2D",
+            "value": "textureResourceId:a4451c6b-609e-473f-8005-8665ee1e8de3_972f3d5a-3dd4-46d9-aeb6-4b29181acdb9"
+          },
+          "u_outlinTexture": {
+            "type": "sampler2D",
+            "value": {
+              "passName": "Outline_a4451c6b-609e-473f-8005-8665ee1e8de3_plugin_0",
+              "renderTarget": {
+                "name": "Outline_a4451c6b-609e-473f-8005-8665ee1e8de3_plugin_0",
+                "width": 1160,
+                "widthExpress": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;outlineRenderTargetWidth",
+                "height": 2000,
+                "heightExpress": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;outlineRenderTargetHeight"
+              },
+              "vertexShader": "44bf1bc4",
+              "fragmentShader": "6521759e",
+              "attributeBuffer": "bufferResourceId:ndcBuffer",
+              "uniforms": {
+                "u_uvTransform": {
+                  "type": "vec4",
+                  "value": [
+                    -0.03703703703703704,
+                    -0.020833333333333336,
+                    1.0740740740740742,
+                    1.0416666666666667
+                  ],
+                  "express": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;[uvOffsetX, uvOffsetY, uvScaleX, uvScaleY]"
+                },
+                "u_texture": {
+                  "type": "sampler2D",
+                  "value": "textureResourceId:a4451c6b-609e-473f-8005-8665ee1e8de3_972f3d5a-3dd4-46d9-aeb6-4b29181acdb9"
+                },
+                "u_texResolution": {
+                  "type": "vec2",
+                  "value": [
+                    1160,
+                    2000
+                  ],
+                  "express": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;[outlineRenderTargetWidth, outlineRenderTargetHeight]"
+                },
+                "u_steps": {
+                  "type": "int",
+                  "value": 40,
+                  "express": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;control_size"
+                },
+                "u_outlineColor": {
+                  "type": "vec4",
+                  "value": [
+                    0.10980392156862745,
+                    0.6627450980392157,
+                    0.37254901960784315,
+                    1
+                  ],
+                  "express": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;[control_color[1], control_color[2], control_color[3], control_color[4]]"
+                }
+              }
+            }
+          },
+          "u_resolution": {
+            "type": "vec2",
+            "value": [
+              1160,
+              2000
+            ],
+            "express": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;[outlineRenderTargetWidth, outlineRenderTargetHeight]"
+          },
+          "u_stepRadius": {
+            "type": "int",
+            "value": 1
+          },
+          "u_outlineColor": {
+            "type": "vec4",
+            "value": [
+              0.10980392156862745,
+              0.6627450980392157,
+              0.37254901960784315,
+              1
+            ],
+            "express": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;[control_color[1], control_color[2], control_color[3], control_color[4]]"
+          }
+        }
+      },
+      "0c17fa52-0501-458b-9f8d-cb81fb16efb6": {
+        "passName": "OutlineFill_0c17fa52-0501-458b-9f8d-cb81fb16efb6_plugin_0",
+        "renderTarget": {
+          "name": "OutlineFill_0c17fa52-0501-458b-9f8d-cb81fb16efb6_plugin_0",
+          "width": 867.76,
+          "widthExpress": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;outlineRenderTargetWidth",
+          "height": 387.6,
+          "heightExpress": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;outlineRenderTargetHeight"
+        },
+        "vertexShader": "7d9a1e7d",
+        "fragmentShader": "940becd2",
+        "attributeBuffer": "bufferResourceId:ndcBuffer",
+        "uniforms": {
+          "u_uvTransform": {
+            "type": "vec4",
+            "value": [
+              -0.01790488922841864,
+              -0.04194630872483221,
+              1.0358097784568372,
+              1.0838926174496644
+            ],
+            "express": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;[uvOffsetX, uvOffsetY, uvScaleX, uvScaleY]"
+          },
+          "u_srcTexture": {
+            "type": "sampler2D",
+            "value": "textureResourceId:0c17fa52-0501-458b-9f8d-cb81fb16efb6_01520554-4f0c-41ae-8b12-4aae7c63dc9e"
+          },
+          "u_outlinTexture": {
+            "type": "sampler2D",
+            "value": {
+              "passName": "Outline_0c17fa52-0501-458b-9f8d-cb81fb16efb6_plugin_0",
+              "renderTarget": {
+                "name": "Outline_0c17fa52-0501-458b-9f8d-cb81fb16efb6_plugin_0",
+                "width": 867.76,
+                "widthExpress": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;outlineRenderTargetWidth",
+                "height": 387.6,
+                "heightExpress": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;outlineRenderTargetHeight"
+              },
+              "vertexShader": "44bf1bc4",
+              "fragmentShader": "6521759e",
+              "attributeBuffer": "bufferResourceId:ndcBuffer",
+              "uniforms": {
+                "u_uvTransform": {
+                  "type": "vec4",
+                  "value": [
+                    -0.01790488922841864,
+                    -0.04194630872483221,
+                    1.0358097784568372,
+                    1.0838926174496644
+                  ],
+                  "express": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;[uvOffsetX, uvOffsetY, uvScaleX, uvScaleY]"
+                },
+                "u_texture": {
+                  "type": "sampler2D",
+                  "value": "textureResourceId:0c17fa52-0501-458b-9f8d-cb81fb16efb6_01520554-4f0c-41ae-8b12-4aae7c63dc9e"
+                },
+                "u_texResolution": {
+                  "type": "vec2",
+                  "value": [
+                    867.76,
+                    387.6
+                  ],
+                  "express": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;[outlineRenderTargetWidth, outlineRenderTargetHeight]"
+                },
+                "u_steps": {
+                  "type": "int",
+                  "value": 15,
+                  "express": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;control_size"
+                },
+                "u_outlineColor": {
+                  "type": "vec4",
+                  "value": [
+                    0.1843137254901961,
+                    0.5882352941176471,
+                    0.5254901960784314,
+                    1
+                  ],
+                  "express": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;[control_color[1], control_color[2], control_color[3], control_color[4]]"
+                }
+              }
+            }
+          },
+          "u_resolution": {
+            "type": "vec2",
+            "value": [
+              867.76,
+              387.6
+            ],
+            "express": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;[outlineRenderTargetWidth, outlineRenderTargetHeight]"
+          },
+          "u_stepRadius": {
+            "type": "int",
+            "value": 1
+          },
+          "u_outlineColor": {
+            "type": "vec4",
+            "value": [
+              0.1843137254901961,
+              0.5882352941176471,
+              0.5254901960784314,
+              1
+            ],
+            "express": "var outlineRenderTargetWidth = sourceWidth + control_size * 2;var outlineRenderTargetHeight = sourceHeight + control_size * 2;var uvScaleX = outlineRenderTargetWidth/sourceWidth;var uvScaleY = outlineRenderTargetHeight/sourceHeight;var uvOffsetX = (sourceWidth - outlineRenderTargetWidth)/2/outlineRenderTargetWidth*uvScaleX;var uvOffsetY = (sourceHeight - outlineRenderTargetHeight)/2/outlineRenderTargetHeight*uvScaleY;[control_color[1], control_color[2], control_color[3], control_color[4]]"
+          }
+        }
+      }
+    },
+    "shaders": {
+      "44bf1bc4": "precision mediump float;\r\n\r\n// 输入顶点属性\r\nin vec3 a_position;\r\nin vec2 a_texCoord;\r\n\r\n// 输出到片元着色器的变量\r\nout vec2 v_texCoord;\r\n\r\nvoid main() {\r\n    gl_Position = vec4(a_position, 1.0);\r\n    v_texCoord = a_texCoord;\r\n}",
+      "4092a40c": "\r\nprecision mediump float;\r\n\r\n// 传入的待模糊纹理\r\nuniform sampler2D u_texture;\r\n\r\n// 顶点着色器传来的纹理坐标\r\nin vec2 v_texCoord;\r\n// 最终输出\r\nout vec4 FragColor;\r\n\r\nuniform float hue;\r\nuniform float saturation;\r\nvoid main() {\r\n    vec4 color = texture(u_texture, v_texCoord);\r\n    /* hue adjustment, wolfram alpha: RotationTransform[angle, {1, 1, 1}][{x, y, z}] */\r\n    float angle = hue * 3.14159265;\r\n    float s = sin(angle), c = cos(angle);\r\n    vec3 weights = (vec3(2.0 * c, -sqrt(3.0) * s - c, sqrt(3.0) * s - c) + 1.0) / 3.0;\r\n    float len = length(color.rgb);\r\n    color.rgb = vec3(\r\n        dot(color.rgb, weights.xyz),\r\n        dot(color.rgb, weights.zxy),\r\n        dot(color.rgb, weights.yzx)\r\n    );\r\n    /* saturation adjustment */\r\n    float average = (color.r + color.g + color.b) / 3.0;\r\n    if (saturation > 0.0) {\r\n        color.rgb += (average - color.rgb) * (1.0 - 1.0 / (1.001 - saturation));\r\n    } else {\r\n        color.rgb += (average - color.rgb) * (-saturation);\r\n    }\r\n    \r\n    FragColor = color;\r\n}\r\n",
+      "7d9a1e7d": "precision mediump float;\r\n\r\nin vec3 a_position;\r\nin vec2 a_texCoord;\r\n\r\nout vec2 v_texCoord;\r\n\r\nvoid main() {\r\n    gl_Position = vec4(a_position, 1.0);\r\n    v_texCoord = a_texCoord;\r\n}\r\n",
+      "940becd2": "precision mediump float;\r\n\r\nin vec2 v_texCoord;\r\nout vec4 FragColor;\r\n\r\n// 主场景(含文字+描边等)已经渲染好的纹理\r\nuniform sampler2D u_srcTexture;\r\nuniform sampler2D u_outlinTexture;\r\n// 尺寸\r\nuniform vec2 u_resolution;\r\n\r\nuniform int u_stepRadius;\r\nuniform vec4 u_uvTransform;\r\nuniform vec4 u_outlineColor;\r\n\r\n// 采样半径(像素)\r\nconst int RADIUS = 1; // 可以调大一点，比如 1或2\r\n\r\nvoid main()\r\n{\r\n    vec2 transformedTexCoord = v_texCoord * u_uvTransform.zw + u_uvTransform.xy;\r\n    vec4 srcColor;\r\n    if (transformedTexCoord.x < 0.0 || transformedTexCoord.y < 0.0 || transformedTexCoord.x > 1.0 || transformedTexCoord.y > 1.0)\r\n    {\r\n        srcColor = vec4(0.0, 0.0, 0.0, 0.0);\r\n    }\r\n    else \r\n    {\r\n        srcColor = texture(u_srcTexture, transformedTexCoord);\r\n    }\r\n\r\n    if (srcColor.a > 0.01)\r\n    {\r\n        // 预乘 Alpha（若纹理已预乘则跳过此步）\r\n        vec3 premultipliedTop = srcColor.rgb;// * srcColor.a;\r\n        // 模拟 gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA)\r\n        vec3 blendedRGB = premultipliedTop + u_outlineColor.rgb * (1.0 - srcColor.a);\r\n        // 输出最终颜色（假设混合后不透明）\r\n        FragColor = vec4(blendedRGB, 1.0);\r\n    }\r\n    else \r\n    {\r\n        vec4 centerColor = texture(u_outlinTexture, v_texCoord);\r\n\r\n        // 像素步长\r\n        vec2 texel = 1.0 / u_resolution;\r\n        float accumColorAlpha = centerColor.a;\r\n        float count = 1.0;\r\n\r\n        for(int y = -RADIUS; y <= RADIUS; y++) {\r\n            for(int x = -RADIUS; x <= RADIUS; x++) {\r\n                if(x == 0 && y == 0) continue;\r\n                vec2 offset = vec2(float(x*u_stepRadius), float(y*u_stepRadius)) * texel;\r\n                float alpha = texture(u_outlinTexture, v_texCoord + offset).a;\r\n                accumColorAlpha += alpha;\r\n                count += 1.0;\r\n            }\r\n        }\r\n        centerColor = centerColor*(accumColorAlpha / count);\r\n        FragColor = centerColor;\r\n    }\r\n}",
+      "6521759e": "\r\n\r\nprecision mediump float;\r\n\r\n// 来自顶点着色器的纹理坐标\r\nin vec2 v_texCoord;\r\n\r\n// 输出到帧缓冲的颜色\r\nout vec4 FragColor;\r\n\r\n// 原纹理，Alpha 通道需要包含文字形状\r\nuniform sampler2D u_texture;\r\nuniform vec2 u_texResolution;  \r\nuniform int u_steps;\r\nuniform vec4 u_outlineColor;\r\n\r\nuniform vec4 u_uvTransform;\r\n// uniform vec2 u_outlineOffset;\r\n\r\n// 采样方向（48个方向，间隔7.5°）\r\nconst int NUM_DIRECTIONS = 48;\r\nconst vec2 directions[NUM_DIRECTIONS] = vec2[](\r\n    vec2( 1.0000,  0.0000),  //   0°\r\n    vec2( 0.9914,  0.1305),  //   7.5°\r\n    vec2( 0.9659,  0.2588),  //  15°\r\n    vec2( 0.9239,  0.3827),  //  22.5°\r\n    vec2( 0.8660,  0.5000),  //  30°\r\n    vec2( 0.7880,  0.6157),  //  37.5°\r\n    vec2( 0.7071,  0.7071),  //  45°\r\n    vec2( 0.6157,  0.7880),  //  52.5°\r\n    vec2( 0.5000,  0.8660),  //  60°\r\n    vec2( 0.3827,  0.9239),  //  67.5°\r\n    vec2( 0.2588,  0.9659),  //  75°\r\n    vec2( 0.1305,  0.9914),  //  82.5°\r\n    vec2( 0.0000,  1.0000),  //  90°\r\n    vec2(-0.1305,  0.9914),  //  97.5°\r\n    vec2(-0.2588,  0.9659),  // 105°\r\n    vec2(-0.3827,  0.9239),  // 112.5°\r\n    vec2(-0.5000,  0.8660),  // 120°\r\n    vec2(-0.6157,  0.7880),  // 127.5°\r\n    vec2(-0.7071,  0.7071),  // 135°\r\n    vec2(-0.7880,  0.6157),  // 142.5°\r\n    vec2(-0.8660,  0.5000),  // 150°\r\n    vec2(-0.9239,  0.3827),  // 157.5°\r\n    vec2(-0.9659,  0.2588),  // 165°\r\n    vec2(-0.9914,  0.1305),  // 172.5°\r\n    vec2(-1.0000,  0.0000),  // 180°\r\n    vec2(-0.9914, -0.1305),  // 187.5°\r\n    vec2(-0.9659, -0.2588),  // 195°\r\n    vec2(-0.9239, -0.3827),  // 202.5°\r\n    vec2(-0.8660, -0.5000),  // 210°\r\n    vec2(-0.7880, -0.6157),  // 217.5°\r\n    vec2(-0.7071, -0.7071),  // 225°\r\n    vec2(-0.6157, -0.7880),  // 232.5°\r\n    vec2(-0.5000, -0.8660),  // 240°\r\n    vec2(-0.3827, -0.9239),  // 247.5°\r\n    vec2(-0.2588, -0.9659),  // 255°\r\n    vec2(-0.1305, -0.9914),  // 262.5°\r\n    vec2( 0.0000, -1.0000),  // 270°\r\n    vec2( 0.1305, -0.9914),  // 277.5°\r\n    vec2( 0.2588, -0.9659),  // 285°\r\n    vec2( 0.3827, -0.9239),  // 292.5°\r\n    vec2( 0.5000, -0.8660),  // 300°\r\n    vec2( 0.6157, -0.7880),  // 307.5°\r\n    vec2( 0.7071, -0.7071),  // 315°\r\n    vec2( 0.7880, -0.6157),  // 322.5°\r\n    vec2( 0.8660, -0.5000),  // 330°\r\n    vec2( 0.9239, -0.3827),  // 337.5°\r\n    vec2( 0.9659, -0.2588),  // 345°\r\n    vec2( 0.9914, -0.1305)   // 352.5°\r\n);\r\n\r\n\r\nvoid main() \r\n{\r\n    vec2 transformedTexCoord = (v_texCoord) * u_uvTransform.zw + u_uvTransform.xy;\r\n    \r\n    vec4 srcColor;\r\n    if (transformedTexCoord.x < 0.0 || transformedTexCoord.y < 0.0 || transformedTexCoord.x > 1.0 || transformedTexCoord.y > 1.0)\r\n    {\r\n        srcColor = vec4(0.0, 0.0, 0.0, 0.0);\r\n    }\r\n    else \r\n    {\r\n        srcColor = texture(u_texture, transformedTexCoord);\r\n    }\r\n\r\n    // 当前像素的 Alpha\r\n    float alphaCenter = srcColor.a;\r\n\r\n    if (alphaCenter > 0.01)\r\n    {\r\n        FragColor = u_outlineColor;\r\n    }\r\n    else \r\n    {\r\n        float minDist = 999999.0; // 用来记录搜索到的最短距离\r\n\r\n        float distAdded = 0.0; // 用来记录当前像素的轮廓宽度\r\n        float addCount = 0.0;\r\n\r\n        // 在多个方向上搜索轮廓\r\n        for(int i = 0; i < NUM_DIRECTIONS; i++)\r\n        {\r\n            vec2 dir = normalize(directions[i]);\r\n            // 每次向外“走” stepLen 像素，最多走 u_steps 步\r\n            // 注意：这里 stepLen 先设为1像素对应的 UV 长度\r\n            float stepLen = 1.0;\r\n\r\n            // 逐步走\r\n            float dist = 0.0; \r\n            float prevAlpha = alphaCenter;\r\n            for(int s = 0; s < u_steps; s++)\r\n            {\r\n                dist += stepLen;\r\n                // 换算成UV偏移\r\n                vec2 offsetUV = dir * dist / u_texResolution; \r\n\r\n                // // 边界检查，防止越过纹理范围\r\n                // if(sampleUV.x<0.0 || sampleUV.x>1.0 ||\r\n                //    sampleUV.y<0.0 || sampleUV.y>1.0)\r\n                // {\r\n                //     // 超出纹理边界就停止\r\n                //     break;\r\n                // }\r\n\r\n                vec2 sampleUV = transformedTexCoord + offsetUV;\r\n                if(sampleUV.x<0.0 || sampleUV.x>1.0 ||\r\n                sampleUV.y<0.0 || sampleUV.y>1.0)\r\n                {\r\n                    // 超出纹理边界就停止\r\n                    // break;\r\n                    continue;\r\n                }\r\n\r\n                float a = texture(u_texture, sampleUV).a;\r\n\r\n                // 一旦检测到 alpha 与 prevAlpha “跨过阈值”(从<0.5到>0.5或者相反)\r\n                // 就认为碰到边缘\r\n                // 这里简单判断：只要 a 和 prevAlpha 处于不同侧，就算入边缘\r\n                bool crossed = (a>0.5 && prevAlpha<0.5) || (a<0.5 && prevAlpha>0.5);\r\n                if(crossed)\r\n                {\r\n                    // 记录最小距离\r\n                    if(dist < minDist)\r\n                    {\r\n                        minDist = dist;\r\n                    }\r\n                    break;\r\n                }\r\n                prevAlpha = a;\r\n            }\r\n\r\n            if(dist < (float(u_steps) - 0.1))\r\n            {\r\n                distAdded += dist;\r\n                addCount += 1.0;\r\n            }\r\n        }\r\n        if(minDist > 999998.0) // 说明没有撞到任何边缘\r\n        {\r\n            FragColor = srcColor;\r\n        }\r\n        else {\r\n\r\n            float alpha = minDist >= float(u_steps - 3) ? (1.0 - (minDist - float(u_steps -3))/2.0) : 1.0;\r\n            FragColor = vec4(u_outlineColor.rgb, u_outlineColor.a*alpha);\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n"
+    }
+  }
+}
