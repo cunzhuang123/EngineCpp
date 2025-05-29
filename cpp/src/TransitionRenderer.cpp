@@ -9,7 +9,7 @@ firstRenderer(firstRenderer), secondRenderer(secondRenderer), id(id)
     materialPass = std::make_shared<Material>();
     materialPass->passName = "Transition" + id;
     materialPass->renderTargetInfo = engine.getSequenceRenderTargetInfo();
-    materialPass->attributeBuffer = engine.getNdcbuffer();
+    materialPass->attributeBuffer = engine.getNdcBuffer();
 
     RenderTargetInfo firstRenderTarget = {id + "_firstRenderTarget",  engine.getRenderTargetWidth(),  engine.getRenderTargetHeight()};
     RenderTargetInfo secondRenderTarget = {id + "_secondRenderTarget", engine.getRenderTargetWidth(),  engine.getRenderTargetHeight()};
@@ -44,4 +44,15 @@ void TransitionRenderer::updateRenderTargetInfo(RenderTargetInfo renderTargetInf
         firstRenderer->setRenderTarget(firstRenderTarget);
         secondRenderer->setRenderTarget(secondTextureTarget);    
     }
+}
+
+void TransitionRenderer::setMaterialPass(std::shared_ptr<Material> materialPass)
+{
+    auto renderTargetInfo = this->materialPass->renderTargetInfo;
+    RenderTargetInfo firstRenderTarget = std::get<RenderTargetInfo>(this->materialPass->uniforms["u_firstTexture"].value);
+    RenderTargetInfo secondRenderTarget = std::get<RenderTargetInfo>(this->materialPass->uniforms["u_secondTexture"].value);
+    this->materialPass = materialPass;
+    this->materialPass->renderTargetInfo = renderTargetInfo;
+    this->materialPass->uniforms["u_firstTexture"].value = firstRenderTarget;
+    this->materialPass->uniforms["u_secondTexture"].value = secondRenderTarget;
 }

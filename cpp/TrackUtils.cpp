@@ -52,17 +52,13 @@ double TrackUtils::getOriginalTime(double globalTime, const nlohmann::json& sequ
     double originalStartTime = startPercent * originalDuration;
     double originalTime = sequenceTime * rate + originalStartTime;
 
-    // return originalTime;
-
-    double originalEndTime = timer["duration"].get<double>()*originalDuration;
-
-    if (originalTime < (originalStartTime + 33.3))
+    if (originalTime < originalStartTime)
     {
         return originalStartTime;
     }
-    else if (originalTime > (originalEndTime - 33.3))
+    else if (originalTime > originalDuration)
     {
-        return (originalEndTime - 33.3);
+        return originalDuration;
     }
     else 
     {

@@ -1,7 +1,7 @@
 #ifndef RENDERERRESOURCE_H
 #define RENDERERRESOURCE_H
 
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include <vector>
 
 class RendererResource {

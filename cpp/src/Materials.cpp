@@ -1,7 +1,10 @@
 #include "Materials.h"
-#include <sstream>  // 包含字符串流的头文件
 
-// #include "../nlohmann/json.hpp"
+#include <iostream>
+#include <sstream>  // 包含字符串流的头文件
+#include "ExpressTool.h"
+#include "../CoreUtils.h"
+
 
 // 实现输出流操作符重载
 std::ostream& operator<<(std::ostream& os, const UniformType& type) {
@@ -93,7 +96,7 @@ std::vector<std::string> Material::splitString(const std::string& str, char deli
 }
 
 // 反序列化单个 pass
-std::shared_ptr<Material> Material::deserializePass(const nlohmann::json& passJson, std::map<std::string, std::shared_ptr<RendererResource>> rendererResourceMap, GLuint screenBuffer, GLuint ndcBuffer) {
+std::shared_ptr<Material> Material::deserializePass(const nlohmann::json& passJson, std::map<std::string, std::shared_ptr<RendererResource>> rendererResourceMap, GLuint screenBuffer, GLuint ndcBuffer, RenderTargetInfo defaultSequenceRenderTarget) {
     try {
         // 获取唯一标识符，假设 passName 唯一
         std::string passName = passJson["passName"].get<std::string>();
@@ -231,13 +234,23 @@ std::shared_ptr<Material> Material::deserializePass(const nlohmann::json& passJs
                 else if(value.is_object() && value["passName"].is_string()) {
                     // 处理嵌套的 MaterialPtr
                     auto nestedPass = value;
-                    auto nestedMaterial = deserializePass(nestedPass, rendererResourceMap, screenBuffer, ndcBuffer);
+                    auto nestedMaterial = deserializePass(nestedPass, rendererResourceMap, screenBuffer, ndcBuffer, defaultSequenceRenderTarget);
                     uniformType = UniformType::MaterialPtr;
                     uniformValue = nestedMaterial;
                 }
                 else if(value.is_object() && value["name"].is_string() && value["width"].is_number_integer()) {
                     uniformType = UniformType::RenderTarget;
                     RenderTargetInfo info = {value["name"].get<std::string>(), value["width"].get<int>(), value["height"].get<int>()};
+                    if (value.contains("widthExpress") && value.contains("heightExpress"))
+                    {
+                        info.widthExpress = value["widthExpress"].get<std::string>();
+                        info.heightExpress = value["heightExpress"].get<std::string>();    
+                    }
+                    if (defaultSequenceRenderTarget.name == info.name)
+                    {
+                        info.width = defaultSequenceRenderTarget.width;
+                        info.height = defaultSequenceRenderTarget.height;
+                    }
                     uniformValue = info;
                 }
                 else {
@@ -261,15 +274,25 @@ std::shared_ptr<Material> Material::deserializePass(const nlohmann::json& passJs
 }
 
 // 主反序列化函数
-std::shared_ptr<Material> Material::deserialize(const nlohmann::json& materialData, std::map<std::string, std::shared_ptr<RendererResource>> rendererResourceMap, GLuint screenBuffer, GLuint ndcBuffer, std::string seqId) {
+std::shared_ptr<Material> Material::deserialize(const nlohmann::json& materialData, std::map<std::string, std::shared_ptr<RendererResource>> rendererResourceMap, GLuint screenBuffer, GLuint ndcBuffer, std::string seqId, RenderTargetInfo defaultSequenceRenderTarget) {
     // 获取 materialPasses
     auto materialPasses = materialData["materialPasses"];
     // 假设选择第一个 pass 作为根 Material
     if(materialPasses.empty()) {
         return nullptr; // 没有 pass，返回空指针
     }
+
+    // std::cout << materialPasses << '\n';
+
     auto pass = materialPasses[seqId];
-    return deserializePass(pass, rendererResourceMap, screenBuffer, ndcBuffer);
+
+    if(pass.empty()) {
+        return nullptr; // 没有 pass，返回空指针
+    }
+
+    // std::cout << pass << '\n';
+
+    return deserializePass(pass, rendererResourceMap, screenBuffer, ndcBuffer, defaultSequenceRenderTarget);
 };
 
 void Material::updateTextrue(std::shared_ptr<Material> material, GLuint oldTexture, GLuint newTexture)
@@ -282,6 +305,84 @@ void Material::updateTextrue(std::shared_ptr<Material> material, GLuint oldTextu
             auto nestedMaterial = std::get<std::shared_ptr<Material>>(uniformValue.value);
             updateTextrue(nestedMaterial, oldTexture, newTexture);
         }
+    }
+}
+
+
+UniformVariant Material::evaluateParseExpression(const UniformType& type, const std::string& expr, const std::unordered_map<std::string, UniformValue>& expressValue) {
+    // ScopedProfiler profiler("ExpressTool::evaluateParseExpression " + expr);
+    // 这只是一个简化示例，你需要开发一个更健壮的解析器
+    // 解析 "[control_color[1], control_color[2], control_color[3], 1.0]" 形式的表达式
+    // 简单解析示例（非常简化）
+    if (type == UniformType::Vec4f) {
+        std::string content = expr.substr(1, expr.length() - 2);
+        std::vector<std::string> parts = CoreUtils::split(content, ",");
+        glm::vec4 vec4Value;
+        for (int i = 0; i < parts.size(); i++)
+        {
+            double value = ExpressTool::evaluateExpression(parts[i], expressValue);
+            vec4Value[i] = static_cast<float>(value);
+        }
+        return UniformVariant(vec4Value);
+    }
+    else if (type == UniformType::Vec3f) {
+        std::string content = expr.substr(1, expr.length() - 2);
+        std::vector<std::string> parts = CoreUtils::split(content, ",");
+        glm::vec3 vec3Value;
+        for (int i = 0; i < parts.size(); i++)
+        {
+            double value = ExpressTool::evaluateExpression(parts[i], expressValue);
+            vec3Value[i] = static_cast<float>(value);
+        }
+        return UniformVariant(vec3Value);
+    }
+    else if (type == UniformType::Vec2f) {
+        std::string content = expr.substr(1, expr.length() - 2);
+        std::vector<std::string> parts = CoreUtils::split(content, ",");
+        glm::vec2 vec2Value;
+        for (int i = 0; i < parts.size(); i++)
+        {
+            double value = ExpressTool::evaluateExpression(parts[i], expressValue);
+            vec2Value[i] = static_cast<float>(value);
+        }
+        return UniformVariant(vec2Value);
+    }
+
+    else if (type == UniformType::Vec3i) {
+        std::string content = expr.substr(1, expr.length() - 2);
+        std::vector<std::string> parts = CoreUtils::split(content, ",");
+        glm::ivec3 vec3Value;
+        for (int i = 0; i < parts.size(); i++)
+        {
+            double value = ExpressTool::evaluateExpression(parts[i], expressValue);
+            vec3Value[i] = static_cast<int>(value);
+        }
+        return UniformVariant(vec3Value);
+    }
+    else if (type == UniformType::Vec2i) {
+        std::string content = expr.substr(1, expr.length() - 2);
+        std::vector<std::string> parts = CoreUtils::split(content, ",");
+        glm::ivec2 vec2Value;
+        for (int i = 0; i < parts.size(); i++)
+        {
+            double value = ExpressTool::evaluateExpression(parts[i], expressValue);
+            vec2Value[i] = static_cast<int>(value);
+        }
+        return UniformVariant(vec2Value);
+    }
+
+    else if (type == UniformType::Float) {
+        double value = ExpressTool::evaluateExpression(expr, expressValue);
+        return UniformVariant(static_cast<float>(value));
+    }
+    else if (type == UniformType::Int) {
+        double value = ExpressTool::evaluateExpression(expr, expressValue);
+        int intValue = static_cast<int>(value);
+        return UniformVariant(intValue);
+    }
+    else {
+        std::cerr << "不支持的表达式类型：" << type << std::endl;
+        return UniformVariant();
     }
 }
 

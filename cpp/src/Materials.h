@@ -1,34 +1,14 @@
 #ifndef MATERIALS_H
 #define MATERIALS_H
 
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include <glm/glm.hpp>
 #include <string>
 #include <map>
 #include <variant>
 #include <memory>
-#include <iostream>
-#include <glm/glm.hpp>
 #include "../nlohmann/json.hpp"
 #include "RendererResource.h"
-
-
-
-// namespace nlohmann {
-//     template<
-//         template<typename U, typename V, typename... Args> class ObjectType,
-//         template<typename U, typename... Args> class ArrayType,
-//         class StringType, class BooleanType, class NumberIntegerType,
-//         class NumberUnsignedType, class NumberFloatType,
-//         template<typename U> class AllocatorType,
-//         template<typename T, typename SFINAE> class JSONSerializer,
-//         class BinaryType
-//     >
-//     class basic_json;
-//     // using json = basic_json<>;
-// };
-// using json = nlohmann::json;
-
 
 struct Material; // 前向声明
 struct RenderTargetInfo {
@@ -56,8 +36,8 @@ struct UniformValue {
 
 struct Material {
     static void updateTextrue(std::shared_ptr<Material> material, GLuint oldTexture, GLuint newTexture);
-    static std::shared_ptr<Material> deserialize(const nlohmann::json& materialData, std::map<std::string, std::shared_ptr<RendererResource>> rendererResourceMap, GLuint screenBuffer, GLuint ndcBuffer, std::string seqId);
-    static std::shared_ptr<Material> deserializePass(const nlohmann::json& passJson, std::map<std::string, std::shared_ptr<RendererResource>> rendererResourceMap, GLuint screenBuffer, GLuint ndcBuffer);
+    static std::shared_ptr<Material> deserialize(const nlohmann::json& materialData, std::map<std::string, std::shared_ptr<RendererResource>> rendererResourceMap, GLuint screenBuffer, GLuint ndcBuffer, std::string seqId, RenderTargetInfo defaultSequenceRenderTarget);
+    static std::shared_ptr<Material> deserializePass(const nlohmann::json& passJson, std::map<std::string, std::shared_ptr<RendererResource>> rendererResourceMap, GLuint screenBuffer, GLuint ndcBuffer, RenderTargetInfo defaultSequenceRenderTarget);
 
     static glm::mat4 parseMat4(const nlohmann::json& matJson);
     // 解析 glm::vec4 从 JSON
@@ -68,6 +48,7 @@ struct Material {
     static glm::ivec3 parseVec3i(const nlohmann::json& vecJson);
     static glm::ivec2 parseVec2i(const nlohmann::json& vecJson);
     static std::vector<std::string> splitString(const std::string& str, char delimiter);
+    static UniformVariant evaluateParseExpression(const UniformType& type, const std::string& expr, const std::unordered_map<std::string, UniformValue>& expressValue);
 
     std::string passName;
     RenderTargetInfo renderTargetInfo;

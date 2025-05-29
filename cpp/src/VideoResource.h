@@ -5,7 +5,7 @@
 #ifndef VIDEORESOURCE_H
 #define VIDEORESOURCE_H
 
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include <string>
 #include <vector>
 #include "RendererResource.h"

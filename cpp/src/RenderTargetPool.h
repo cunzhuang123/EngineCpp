@@ -3,7 +3,7 @@
 #ifndef RENDERTARGETPOOL_H
 #define RENDERTARGETPOOL_H
 
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include <map>
 #include <vector>
 #include <string>

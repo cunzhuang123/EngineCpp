@@ -163,6 +163,9 @@ void Keyframe::updateTextRenderer(VideoRenderer& renderer, double globalTime, co
         hasValue = true;
     }
     
+    fontSize = static_cast<int>(fontSize*engine.globalRenderScale);
+    strokeWidth = static_cast<int>(strokeWidth*engine.globalRenderScale);
+
     if (hasValue) {
         std::string resourcePath = sequenceResource.value("absolutePath", "");
         auto resource = std::make_shared<TextResource>(resourcePath, sequenceResource.value("text", "xxx"), fontSize, color, strokeWidth, strokeColor);
@@ -217,7 +220,7 @@ bool Keyframe::isPlainNoEmptyObject(const nlohmann::json& val) {
 }
 
 void Keyframe::updateRenderer(VideoRenderer& renderer, double globalTime, const nlohmann::json& sequence, Engine& engine) {
-    // ScopedProfiler profiler("Keyframe::updateRenderer " + renderer.getName());
+    ScopedProfiler profiler("Keyframe::updateRenderer " + renderer.getName());
     if (sequence.contains("keyframe") && isPlainNoEmptyObject(sequence["keyframe"])) {
         updateRendererAdjust(renderer, globalTime, sequence, engine);
 
@@ -246,6 +249,7 @@ void Keyframe::updateRenderer(VideoRenderer& renderer, double globalTime, const 
 
 void Keyframe::updatePluginRenderer(PluginRenderer& pluginRenderer, double globalTime, const nlohmann::json& sequence, Engine& engine)
 {
+    ScopedProfiler profiler("Keyframe::updatePluginRenderer " + pluginRenderer.getName());
     auto sequenceRenderTarget = engine.getSequenceRenderTargetInfo();
     const auto& plugins = sequence["plugins"];
     for (size_t j = 0; j < plugins.size(); j++)

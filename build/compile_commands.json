@@ -139,6 +139,12 @@
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\CachedExpression.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\CachedExpression.cpp",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\CachedExpression.cpp",
+  "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\CachedExpression.cpp.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
   "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\embedded_files.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\build\\embedded_files.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\build\\embedded_files.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\embedded_files.cpp.obj"

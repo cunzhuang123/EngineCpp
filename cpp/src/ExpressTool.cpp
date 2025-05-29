@@ -1,12 +1,12 @@
 #include "ExpressTool.h"
+
+#include <regex>
+
 #include "../CoreUtils.h"
 #include "ScopedProfiler.h"
 #include "ExpressionCache.h"
+#include "VideoRenderer.h"
 
-// #include "../nlohmann/json.hpp"
-// using json = nlohmann::json;
-
-#include "Materials.h"
 
 std::unordered_map<std::string, std::string> ExpressTool::transformExpressionCache;
 
@@ -327,8 +327,16 @@ double ExpressTool::evaluateExpression(const std::string &expressionText,
                           const std::unordered_map<std::string, UniformValue>& variableMap)
 {
     // ScopedProfiler profiler("ExpressTool::evaluateExpression " + expressionText);
-    static ExpressionCache& exprCache = ExpressionCache::getInstance();
-    return exprCache.evaluate(expressionText, variableMap);
+
+    // 使用函数级别的静态变量延迟初始化
+    // static std::unique_ptr<ExpressionCache> exprCache = nullptr;
+    // if (!exprCache) {
+    //     exprCache = std::make_unique<ExpressionCache>();
+    // }
+
+    return ExpressionCache::getInstance().evaluate(expressionText, variableMap);
+
+    // return 1.0;
 }
 
 
@@ -464,86 +472,25 @@ void ExpressTool::caculateMaterialExpress(std::string rendererName, std::shared_
             if (!uniform.express.empty())
             {
                 auto ep = transformExpressionSelective(uniform.express);
-                uniform.value = evaluateParseExpression(uniform.type, ep, expressValue);
+                uniform.value = Material::evaluateParseExpression(uniform.type, ep, expressValue);
+            }
+            else if(uniform.type == UniformType::RenderTarget)
+            {
+                auto renderTargetInfo = std::get<RenderTargetInfo>(uniform.value);
+                if (!renderTargetInfo.widthExpress.empty())
+                {
+                    auto ep = transformExpressionSelective(renderTargetInfo.widthExpress);
+                    double newWidth = evaluateExpression(ep, expressValue);
+                    renderTargetInfo.width = static_cast<int>(newWidth);
+                }
+                if (!renderTargetInfo.heightExpress.empty())
+                {
+                    auto ep = transformExpressionSelective(renderTargetInfo.heightExpress);
+                    double newHeight = evaluateExpression(ep, expressValue);
+                    renderTargetInfo.height = static_cast<int>(newHeight);
+                }
             }
         }
     }
 }
 
-
-UniformVariant ExpressTool::evaluateParseExpression(const UniformType& type, const std::string& expr, const std::unordered_map<std::string, UniformValue>& expressValue) {
-    // ScopedProfiler profiler("ExpressTool::evaluateParseExpression " + expr);
-    // 这只是一个简化示例，你需要开发一个更健壮的解析器
-    // 解析 "[control_color[1], control_color[2], control_color[3], 1.0]" 形式的表达式
-    // 简单解析示例（非常简化）
-    if (type == UniformType::Vec4f) {
-        std::string content = expr.substr(1, expr.length() - 2);
-        std::vector<std::string> parts = CoreUtils::split(content, ",");
-        glm::vec4 vec4Value;
-        for (int i = 0; i < parts.size(); i++)
-        {
-            double value = evaluateExpression(parts[i], expressValue);
-            vec4Value[i] = static_cast<float>(value);
-        }
-        return UniformVariant(vec4Value);
-    }
-    else if (type == UniformType::Vec3f) {
-        std::string content = expr.substr(1, expr.length() - 2);
-        std::vector<std::string> parts = CoreUtils::split(content, ",");
-        glm::vec3 vec3Value;
-        for (int i = 0; i < parts.size(); i++)
-        {
-            double value = evaluateExpression(parts[i], expressValue);
-            vec3Value[i] = static_cast<float>(value);
-        }
-        return UniformVariant(vec3Value);
-    }
-    else if (type == UniformType::Vec2f) {
-        std::string content = expr.substr(1, expr.length() - 2);
-        std::vector<std::string> parts = CoreUtils::split(content, ",");
-        glm::vec2 vec2Value;
-        for (int i = 0; i < parts.size(); i++)
-        {
-            double value = evaluateExpression(parts[i], expressValue);
-            vec2Value[i] = static_cast<float>(value);
-        }
-        return UniformVariant(vec2Value);
-    }
-
-    else if (type == UniformType::Vec3i) {
-        std::string content = expr.substr(1, expr.length() - 2);
-        std::vector<std::string> parts = CoreUtils::split(content, ",");
-        glm::ivec3 vec3Value;
-        for (int i = 0; i < parts.size(); i++)
-        {
-            double value = evaluateExpression(parts[i], expressValue);
-            vec3Value[i] = static_cast<int>(value);
-        }
-        return UniformVariant(vec3Value);
-    }
-    else if (type == UniformType::Vec2i) {
-        std::string content = expr.substr(1, expr.length() - 2);
-        std::vector<std::string> parts = CoreUtils::split(content, ",");
-        glm::ivec2 vec2Value;
-        for (int i = 0; i < parts.size(); i++)
-        {
-            double value = evaluateExpression(parts[i], expressValue);
-            vec2Value[i] = static_cast<int>(value);
-        }
-        return UniformVariant(vec2Value);
-    }
-
-    else if (type == UniformType::Float) {
-        double value = evaluateExpression(expr, expressValue);
-        return UniformVariant(static_cast<float>(value));
-    }
-    else if (type == UniformType::Int) {
-        double value = evaluateExpression(expr, expressValue);
-        int intValue = static_cast<int>(value);
-        return UniformVariant(intValue);
-    }
-    else {
-        std::cerr << "不支持的表达式类型：" << type << std::endl;
-        return UniformVariant();
-    }
-}

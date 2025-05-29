@@ -3,7 +3,7 @@
 #ifndef SHADERMANAGER_H
 #define SHADERMANAGER_H
 
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include <string>
 #include <map>
 #include "../nlohmann/json.hpp"

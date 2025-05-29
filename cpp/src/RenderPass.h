@@ -3,7 +3,7 @@
 #ifndef RENDERPASS_H
 #define RENDERPASS_H
 
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include <map>
 #include <string>
 #include <set>

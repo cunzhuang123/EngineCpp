@@ -6,7 +6,7 @@
 
 #include "Camera.h"
 #include "Materials.h"
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include <glm/glm.hpp>
 #include <string>
 #include <memory>

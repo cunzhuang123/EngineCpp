@@ -7,6 +7,13 @@
 #include "src/ScopedProfiler.h"
 #include "Keyframe.h"
 
+
+#include "src/VideoResource.h"
+#include "src/ImageResource.h"
+#include "src/TextResource.h"
+
+
+
 // 构造函数
 Engine::Engine()
     : shaderManager(nullptr),
@@ -16,8 +23,8 @@ Engine::Engine()
       currentTime(0.0),
       trackUtils(std::make_unique<TrackUtils>()),
       coreUtils(std::make_unique<CoreUtils>()),
-      renderTargetWidth(1920),
-      renderTargetHeight(1080)
+      renderTargetWidth(0),
+      renderTargetHeight(0)
 {
     camera = std::make_shared<Camera>();
     screenCamera = std::make_shared<Camera>();
@@ -33,7 +40,8 @@ Engine::~Engine() {
 }
 
 // 初始化 Engine
-bool Engine::Init(int width, int height, bool isVisible) {
+bool Engine::Init(int width, int height, float globalRenderScale, bool isVisible) {
+    this->globalRenderScale = globalRenderScale;
         // 初始化 GLFW
     if (!glfwInit()) {
         std::cerr << "无法初始化 GLFW" << std::endl;
@@ -54,7 +62,7 @@ bool Engine::Init(int width, int height, bool isVisible) {
     glfwMakeContextCurrent(window);
 
     // 初始化 GLEW
-    if (glewInit() != GLEW_OK) {
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         std::cerr << "无法初始化 GLEW" << std::endl;
         glfwTerminate();
         return false;
@@ -65,12 +73,12 @@ bool Engine::Init(int width, int height, bool isVisible) {
     std::clog << "Renderer: " << glGetString(GL_RENDERER) << std::endl;
     std::clog << "Vendor: " << glGetString(GL_VENDOR) << std::endl;
 
-    if (GLEW_VERSION_3_3) {
-        std::clog << "OpenGL 3.3 is supported." << std::endl;
-    } else {
-        std::clog << "OpenGL 3.3 is not supported. Application may not work correctly." << std::endl;
-        // 处理错误
-    }
+    // if (GLEW_VERSION_3_3) {
+    //     std::clog << "OpenGL 3.3 is supported." << std::endl;
+    // } else {
+    //     std::clog << "OpenGL 3.3 is not supported. Application may not work correctly." << std::endl;
+    //     // 处理错误
+    // }
 
 
         
@@ -418,7 +426,7 @@ void Engine::updateRenderer(std::shared_ptr<VideoRenderer> renderer, const nlohm
 
     // 设置透明度（alpha 通道）
     float opacity = sequence["adjust"]["opacity"].get<float>();
-    glm::vec4 color = glm::vec4(1.0f, 1.0f, 1.0f, opacity);
+    auto color = glm::vec4(1.0f, 1.0f, 1.0f, opacity);
     renderer->setColor(color);
 
     renderer->updateVerticeBuffer();
@@ -519,8 +527,8 @@ void Engine::UpdateTracks(const nlohmann::json& tracksJsons) {
                     std::optional<std::array<double, 4>> color = CoreUtils::convertHexToColorArray(sequence["resource"].value("color", "#db1116ff"));
                     std::optional<std::array<double, 4>> strokeColor = CoreUtils::convertHexToColorArray(sequence["resource"].value("strokeColor", "#db1116ff"));
                     bool isStroke = sequence["resource"].value("strokeEnabled", false);
-                    int strokeWidth = isStroke ? sequence["resource"].value("strokeWidth", 0) : 0;
-                    int fontSize = static_cast<int>(sequence["resource"].value("fontSize", 60)*sequence["adjust"]["scale"]["x"].get<float>());
+                    int strokeWidth = isStroke ? static_cast<int>(sequence["resource"].value("strokeWidth", 0)*globalRenderScale) : 0;
+                    int fontSize = static_cast<int>(sequence["resource"].value("fontSize", 60)*sequence["adjust"]["scale"]["x"].get<float>()*globalRenderScale);
                     resource = std::make_shared<TextResource>(resourcePath, sequence["resource"].value("text", "xxx"), fontSize, color, strokeWidth, strokeColor);
                 }
 
@@ -614,7 +622,7 @@ void Engine::UpdateTracks(const nlohmann::json& tracksJsons) {
                     auto plugins = sequence["plugins"].get<std::vector<nlohmann::json>>();
                     if (plugins.size() > 0)
                     {
-                        auto material = Material::deserialize(materialData, rendererResourceMap, screenBuffer, ndcBuffer, seqId);
+                        auto material = Material::deserialize(materialData, rendererResourceMap, screenBuffer, ndcBuffer, seqId, sequenceRenderTargetInfo);
                         if(material)
                         {
                             renderer->setMaterialTexturePass(material);
@@ -638,7 +646,7 @@ void Engine::UpdateTracks(const nlohmann::json& tracksJsons) {
                     std::string sequenceId = sequence["id"];
                     std::string transitionId = transition["id"];
                     auto transitionRenderer = transitionRendererMap[transitionId];
-                    transitionRenderer->setMaterialPass(Material::deserialize(materialData, rendererResourceMap, screenBuffer, ndcBuffer, transitionId));
+                    transitionRenderer->setMaterialPass(Material::deserialize(materialData, rendererResourceMap, screenBuffer, ndcBuffer, transitionId, sequenceRenderTargetInfo));
                 }
             }
         }

@@ -26,10 +26,7 @@ public:
         return materialPass;
     }
 
-    virtual void setMaterialPass(std::shared_ptr<Material> materialPass)
-    {
-        this->materialPass = materialPass;
-    }
+    virtual void setMaterialPass(std::shared_ptr<Material> materialPass);
 
 
 private:

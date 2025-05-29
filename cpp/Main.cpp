@@ -1,37 +1,58 @@
 
 
+
 // Main.cpp
-#define NOMINMAX
-#define WIN32_LEAN_AND_MEAN   // 可选：减少 Windows 头体积
-#include <windows.h>
+#ifdef _WIN32
+    #define NOMINMAX
+    #define WIN32_LEAN_AND_MEAN
+    #include <windows.h>
+#endif
 
 #include <iostream>
 #include <fstream>           // 用于文件操作
 
-#include "TrackUtils.h"
 #include "Engine.h"
 #include "src/ScopedProfiler.h"
 
 #include "nlohmann/json.hpp"
 using json = nlohmann::json;
 
+// 跨平台的调试器检测函数
+bool IsDebuggerAttached() {
+#ifdef _WIN32
+    return IsDebuggerPresent();
+#else
+    // Linux下的调试器检测（简单实现）
+    std::ifstream status("/proc/self/status");
+    std::string line;
+    while (std::getline(status, line)) {
+        if (line.find("TracerPid:") == 0) {
+            return line.find("TracerPid:\t0") != 0;
+        }
+    }
+    return false;
+#endif
+}
 
-const int WIDTH = 1920;
-const int HEIGHT = 1080;
-
-
-int main() {
-    std::cerr << "main enter" << std::endl;
+// 跨平台的控制台编码设置
+void SetConsoleEncoding() {
+#ifdef _WIN32
     // 设置控制台输出编码为 UTF-8
     SetConsoleOutputCP(CP_UTF8);
     // 设置控制台输入编码为 UTF-8（可选，视需求而定）
-    SetConsoleCP(CP_UTF8);    
+    SetConsoleCP(CP_UTF8);
+#endif
+    // Linux默认就是UTF-8，无需特殊设置
+}
+
+int main() {
+    SetConsoleEncoding();
 
     try {
         ScopedProfiler profiler("main");
 
         json tracksJson;
-        bool isDebugger = IsDebuggerPresent();
+        bool isDebugger = IsDebuggerAttached();
         if (isDebugger) {
             #ifndef PROJECT_ROOT_DIR
             #define PROJECT_ROOT_DIR ".."
@@ -63,10 +84,12 @@ int main() {
             tracksJson = json::parse(jsonString);
         }
 
+
         Engine engine;
-        engine.Init(tracksJson["width"], tracksJson["height"], tracksJson["isDebug"]);  // 替换为实际的 WIDTH 和 HEIGHT
+        float globalRenderScale = tracksJson.contains("globalRenderScale") ?  tracksJson["globalRenderScale"].get<float>() : 1.0f;
+        engine.Init(tracksJson["width"], tracksJson["height"], globalRenderScale, tracksJson["isDebug"]);  // 替换为实际的 WIDTH 和 HEIGHT
         engine.UpdateTracks(tracksJson);
-        
+
         // 执行播放，并获取结果
         engine.Play(tracksJson["startTime"], tracksJson["endTime"], tracksJson["stepTime"], tracksJson["isDebug"], tracksJson["outputPath"], tracksJson["fps"], tracksJson["mBitRate"]);
         json resultJson;

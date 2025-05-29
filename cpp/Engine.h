@@ -3,28 +3,14 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
-#define NOMINMAX
-#define WIN32_LEAN_AND_MEAN   // 可选：减少 Windows 头体积
-#include <windows.h>
-
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <map>
 #include <vector>
 #include <string>
 #include <memory>
-#include <thread>
-#include <mutex>
 #include <future>
-#include <chrono>
-#include <functional>
 #include "nlohmann/json.hpp"
-
-#include <chrono>
-
-#include <algorithm> // 包含 std::max 的定义
-#include <iostream>
-#include <fstream>           // 用于文件操作
 
 // 包含依赖类的头文件
 #include "TrackUtils.h"
@@ -35,10 +21,6 @@
 #include "src/VideoRenderer.h"
 #include "src/TransitionRenderer.h"
 #include "src/PluginRenderer.h"
-#include "src/VideoResource.h"
-#include "src/TextResource.h"
-#include "src/ImageResource.h"
-#include "src/RendererResource.h"
 #include "src/FFmpegWriter.h"
 #include "src/Materials.h"
 
@@ -47,16 +29,17 @@ public:
     Engine();
     ~Engine();
 
-    bool Init(int width, int height, bool isVisible);
+    bool Init(int width, int height, float globalRenderScale, bool isVisible);
     void UpdateTracks(const nlohmann::json& tracksJson);
     void Play(double startTime, double endTime, double stepTime, bool isDebug, std::string outputPath, int fps, int mBitRate);
 
-    GLuint getNdcbuffer() { return ndcBuffer; };
+    GLuint getNdcBuffer() const { return ndcBuffer; };
     RenderTargetInfo getSequenceRenderTargetInfo() { return sequenceRenderTargetInfo; };
-    int getRenderTargetWidth() { return renderTargetWidth; };
-    int getRenderTargetHeight() { return renderTargetHeight; };
+    int getRenderTargetWidth() const { return renderTargetWidth; };
+    int getRenderTargetHeight() const { return renderTargetHeight; };
 
     std::unique_ptr<RenderPass> renderPass;
+    float globalRenderScale = 1.0f;
 
 private:
     std::shared_ptr<ShaderManager> shaderManager;
@@ -85,7 +68,6 @@ private:
     GLuint offscreenColorTex = 0;
     GLuint offscreenDepthRb  = 0;
     
-
     // 辅助方法
     void setBlendingMode(const std::string& mode);
     bool render(FFmpegWriter& writer, const std::vector<std::vector<nlohmann::json>>& sequences, int& index, int& nextIndex, GLuint pboIds[2], bool isDebug);

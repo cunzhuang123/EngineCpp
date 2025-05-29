@@ -42,7 +42,7 @@ void PluginRenderer::updateVerticeBuffer(Engine& engine)
     }
     else
     {
-        materialPass->attributeBuffer = engine.getNdcbuffer();
+        materialPass->attributeBuffer = engine.getNdcBuffer();
     }
 }
 
@@ -52,11 +52,11 @@ void PluginRenderer::updatePlugin(const nlohmann::json& sequence, std::vector<nl
     // 创建 materialPass (基于Blit材料)
     materialPass = std::make_shared<Material>(Blit);
     materialPass->passName += "_" + name;
-    materialPass->attributeBuffer = engine.getNdcbuffer();
+    materialPass->attributeBuffer = engine.getNdcBuffer();
     materialPass->renderTargetInfo = sequenceRenderTarget;
 
     std::string seqId = sequence["id"];
-    auto material = Material::deserialize(materialData, rendererResourceMap, screenBuffer, ndcBuffer, seqId);
+    auto material = Material::deserialize(materialData, rendererResourceMap, screenBuffer, ndcBuffer, seqId, sequenceRenderTarget);
     materialPass->uniforms["u_texture"] = { UniformType::MaterialPtr, material};
     for (int j = 0; j < plugins.size(); j++)
     {

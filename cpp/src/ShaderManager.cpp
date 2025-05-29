@@ -1,8 +1,6 @@
 // ShaderManager.cpp
 
 #include "ShaderManager.h"
-#include <fstream>
-#include <sstream>
 #include <iostream>
 
 // 声明嵌入数据
