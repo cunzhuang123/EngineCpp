@@ -139,8 +139,22 @@ bool VideoResource::initialize(int rotate) {
         nullptr
     );
     if (!swsContext) {
-        std::cerr << "无法初始化 swsContext" << std::endl;
+        // std::cerr << "无法初始化 swsContext" << std::endl;
+        // return false;
+
+        std::cerr << "sws_getContext 失败:" << std::endl;
+        std::cerr << "输入尺寸: " << codecContext->width << "x" << codecContext->height << std::endl;
+        std::cerr << "输入格式: " << av_get_pix_fmt_name(codecContext->pix_fmt) << std::endl;
+
+        // 检查输入参数是否有效
+        if (codecContext->width <= 0 || codecContext->height <= 0) {
+            std::cerr << "无效的视频尺寸" << std::endl;
+        }
+        if (codecContext->pix_fmt == AV_PIX_FMT_NONE) {
+            std::cerr << "无效的像素格式" << std::endl;
+        }
         return false;
+
     }
 
     // 你的原始initialize()函数代码不变，后面增加一次seek到开头即可：

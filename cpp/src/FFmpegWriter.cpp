@@ -17,6 +17,7 @@ FFmpegWriter::~FFmpegWriter() {
 }
 
 bool FFmpegWriter::initialize(const std::string& filename) {
+
     // 分配输出上下文
     if (avformat_alloc_output_context2(&formatContext, nullptr, nullptr, filename.c_str()) < 0) {
         std::cerr << "无法分配输出上下文" << std::endl;
