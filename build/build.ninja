@@ -47,14 +47,36 @@ cmake_ninja_workdir = D$:/Product/Code/VideoEngine/EngineCpp/build/
 #############################################
 # Order-only phony target for VideoRenderer
 
-build cmake_object_order_depends_target_VideoRenderer: phony || embedded_files.cpp
+build cmake_object_order_depends_target_VideoRenderer: phony || cmake_object_order_depends_target_freetype cmake_object_order_depends_target_glfw embedded_files.cpp
+
+build CMakeFiles/VideoRenderer.dir/thirdPart/glad/src/glad.c.obj: C_COMPILER__VideoRenderer_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/src/glad.c || cmake_object_order_depends_target_VideoRenderer
+  CONFIG = Debug
+  DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
+  DEP_FILE = CMakeFiles\VideoRenderer.dir\thirdPart\glad\src\glad.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
+  OBJECT_DIR = CMakeFiles\VideoRenderer.dir
+  OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\thirdPart\glad\src
+  TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
+  TARGET_PDB = VideoRenderer.pdb
+
+build CMakeFiles/VideoRenderer.dir/cpp/tinyexpr/tinyexpr.c.obj: C_COMPILER__VideoRenderer_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/cpp/tinyexpr/tinyexpr.c || cmake_object_order_depends_target_VideoRenderer
+  CONFIG = Debug
+  DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
+  DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\tinyexpr\tinyexpr.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
+  OBJECT_DIR = CMakeFiles\VideoRenderer.dir
+  OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\tinyexpr
+  TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
+  TARGET_PDB = VideoRenderer.pdb
 
 build CMakeFiles/VideoRenderer.dir/cpp/nanovg/nanovg.c.obj: C_COMPILER__VideoRenderer_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/cpp/nanovg/nanovg.c || cmake_object_order_depends_target_VideoRenderer
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\nanovg\nanovg.c.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\nanovg
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -64,21 +86,10 @@ build CMakeFiles/VideoRenderer.dir/cpp/nanovg/nanovg_impl.c.obj: C_COMPILER__Vid
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\nanovg\nanovg_impl.c.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\nanovg
-  TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
-  TARGET_PDB = VideoRenderer.pdb
-
-build CMakeFiles/VideoRenderer.dir/cpp/src/ExpressionCache.cpp.obj: CXX_COMPILER__VideoRenderer_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/cpp/src/ExpressionCache.cpp || cmake_object_order_depends_target_VideoRenderer
-  CONFIG = Debug
-  DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
-  DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\ExpressionCache.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
-  OBJECT_DIR = CMakeFiles\VideoRenderer.dir
-  OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
   TARGET_PDB = VideoRenderer.pdb
 
@@ -86,8 +97,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/ExpressTool.cpp.obj: CXX_COMPILER__Vi
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\ExpressTool.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -97,8 +108,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/FFmpegWriter.cpp.obj: CXX_COMPILER__V
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\FFmpegWriter.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -108,8 +119,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/RendererResource.cpp.obj: CXX_COMPILE
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\RendererResource.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -119,8 +130,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/TextResource.cpp.obj: CXX_COMPILER__V
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\TextResource.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -130,8 +141,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/ImageResource.cpp.obj: CXX_COMPILER__
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\ImageResource.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -141,8 +152,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/Camera.cpp.obj: CXX_COMPILER__VideoRe
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\Camera.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -152,8 +163,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/Materials.cpp.obj: CXX_COMPILER__Vide
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\Materials.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -163,8 +174,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/RenderPass.cpp.obj: CXX_COMPILER__Vid
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\RenderPass.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -174,8 +185,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/RenderTargetPool.cpp.obj: CXX_COMPILE
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\RenderTargetPool.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -185,8 +196,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/ShaderManager.cpp.obj: CXX_COMPILER__
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\ShaderManager.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -196,8 +207,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/VideoRenderer.cpp.obj: CXX_COMPILER__
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\VideoRenderer.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -207,8 +218,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/TransitionRenderer.cpp.obj: CXX_COMPI
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\TransitionRenderer.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -218,8 +229,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/PluginRenderer.cpp.obj: CXX_COMPILER_
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\PluginRenderer.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -229,8 +240,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/VideoResource.cpp.obj: CXX_COMPILER__
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\VideoResource.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -240,8 +251,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/src/ScopedProfiler.cpp.obj: CXX_COMPILER_
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\ScopedProfiler.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -251,8 +262,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/Keyframe.cpp.obj: CXX_COMPILER__VideoRend
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\Keyframe.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -262,8 +273,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/TrackUtils.cpp.obj: CXX_COMPILER__VideoRe
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\TrackUtils.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -273,8 +284,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/CoreUtils.cpp.obj: CXX_COMPILER__VideoRen
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\CoreUtils.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -284,8 +295,8 @@ build CMakeFiles/VideoRenderer.dir/cpp/Engine.cpp.obj: CXX_COMPILER__VideoRender
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\Engine.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -295,19 +306,30 @@ build CMakeFiles/VideoRenderer.dir/cpp/Main.cpp.obj: CXX_COMPILER__VideoRenderer
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\Main.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
   TARGET_PDB = VideoRenderer.pdb
 
-build CMakeFiles/VideoRenderer.dir/cpp/src/CachedExpression.cpp.obj: CXX_COMPILER__VideoRenderer_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/cpp/src/CachedExpression.cpp || cmake_object_order_depends_target_VideoRenderer
+build CMakeFiles/VideoRenderer.dir/cpp/src/ExpressionCache.cpp.obj: CXX_COMPILER__VideoRenderer_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/cpp/src/ExpressionCache.cpp || cmake_object_order_depends_target_VideoRenderer
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
-  DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\CachedExpression.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\ExpressionCache.cpp.obj.d
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
+  OBJECT_DIR = CMakeFiles\VideoRenderer.dir
+  OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
+  TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
+  TARGET_PDB = VideoRenderer.pdb
+
+build CMakeFiles/VideoRenderer.dir/cpp/src/CachedExprtk.cpp.obj: CXX_COMPILER__VideoRenderer_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/cpp/src/CachedExprtk.cpp || cmake_object_order_depends_target_VideoRenderer
+  CONFIG = Debug
+  DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
+  DEP_FILE = CMakeFiles\VideoRenderer.dir\cpp\src\CachedExprtk.cpp.obj.d
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir\cpp\src
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -317,8 +339,8 @@ build CMakeFiles/VideoRenderer.dir/embedded_files.cpp.obj: CXX_COMPILER__VideoRe
   CONFIG = Debug
   DEFINES = -DPROJECT_ROOT_DIR=\"D:/Product/Code/VideoEngine/EngineCpp\"
   DEP_FILE = CMakeFiles\VideoRenderer.dir\embedded_files.cpp.obj.d
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8
-  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\VideoRenderer.dir
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
@@ -332,18 +354,42 @@ build CMakeFiles/VideoRenderer.dir/embedded_files.cpp.obj: CXX_COMPILER__VideoRe
 #############################################
 # Link the executable VideoRenderer.exe
 
-build VideoRenderer.exe: CXX_EXECUTABLE_LINKER__VideoRenderer_Debug CMakeFiles/VideoRenderer.dir/cpp/nanovg/nanovg.c.obj CMakeFiles/VideoRenderer.dir/cpp/nanovg/nanovg_impl.c.obj CMakeFiles/VideoRenderer.dir/cpp/src/ExpressionCache.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/ExpressTool.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/FFmpegWriter.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/RendererResource.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/TextResource.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/ImageResource.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/Camera.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/Materials.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/RenderPass.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/RenderTargetPool.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/ShaderManager.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/VideoRenderer.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/TransitionRenderer.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/PluginRenderer.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/VideoResource.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/ScopedProfiler.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/Keyframe.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/TrackUtils.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/CoreUtils.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/Engine.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/Main.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/CachedExpression.cpp.obj CMakeFiles/VideoRenderer.dir/embedded_files.cpp.obj | D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/lib/Release/x64/glew32.lib D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/lib-vc2022/glfw3.lib D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/glm.lib D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/freetype.lib D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/avcodec.lib D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/avformat.lib D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/avutil.lib D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/swscale.lib
+build VideoRenderer.exe: CXX_EXECUTABLE_LINKER__VideoRenderer_Debug CMakeFiles/VideoRenderer.dir/thirdPart/glad/src/glad.c.obj CMakeFiles/VideoRenderer.dir/cpp/tinyexpr/tinyexpr.c.obj CMakeFiles/VideoRenderer.dir/cpp/nanovg/nanovg.c.obj CMakeFiles/VideoRenderer.dir/cpp/nanovg/nanovg_impl.c.obj CMakeFiles/VideoRenderer.dir/cpp/src/ExpressTool.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/FFmpegWriter.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/RendererResource.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/TextResource.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/ImageResource.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/Camera.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/Materials.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/RenderPass.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/RenderTargetPool.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/ShaderManager.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/VideoRenderer.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/TransitionRenderer.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/PluginRenderer.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/VideoResource.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/ScopedProfiler.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/Keyframe.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/TrackUtils.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/CoreUtils.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/Engine.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/Main.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/ExpressionCache.cpp.obj CMakeFiles/VideoRenderer.dir/cpp/src/CachedExprtk.cpp.obj CMakeFiles/VideoRenderer.dir/embedded_files.cpp.obj | thirdPart/freetype/freetyped.lib thirdPart/glfw-3.4/src/glfw3.lib D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/avcodec.lib D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/avformat.lib D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/avutil.lib D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/swscale.lib || thirdPart/freetype/freetyped.lib thirdPart/glfw-3.4/src/glfw3.lib
   CONFIG = Debug
-  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
-  LINK_FLAGS = -Xlinker /subsystem:console -fuse-ld=lld-link
-  LINK_LIBRARIES = D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/lib/Release/x64/glew32.lib  D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/lib-vc2022/glfw3.lib  D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/glm.lib  D:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/freetype.lib  D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/avcodec.lib  D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/avformat.lib  D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/avutil.lib  D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/swscale.lib  -lopengl32.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames
+  FLAGS = -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  LINK_FLAGS = -Wl,--gc-sections -Xlinker /subsystem:console -fuse-ld=lld-link
+  LINK_LIBRARIES = thirdPart/freetype/freetyped.lib  thirdPart/glfw-3.4/src/glfw3.lib  D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/avcodec.lib  D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/avformat.lib  D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/avutil.lib  D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/lib/swscale.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames
   OBJECT_DIR = CMakeFiles\VideoRenderer.dir
-  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/bin/Release/x64/glew32.dll D:/Product/Code/VideoEngine/EngineCpp/build"
+  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/bin/avcodec-61.dll D:/Product/Code/VideoEngine/EngineCpp/build && cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/bin/avdevice-61.dll D:/Product/Code/VideoEngine/EngineCpp/build && cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/bin/avfilter-10.dll D:/Product/Code/VideoEngine/EngineCpp/build && cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/bin/avformat-61.dll D:/Product/Code/VideoEngine/EngineCpp/build && cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/bin/avutil-59.dll D:/Product/Code/VideoEngine/EngineCpp/build && cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/bin/postproc-58.dll D:/Product/Code/VideoEngine/EngineCpp/build && cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/bin/swresample-5.dll D:/Product/Code/VideoEngine/EngineCpp/build && cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/bin/swscale-8.dll D:/Product/Code/VideoEngine/EngineCpp/build"
   PRE_LINK = cd .
   TARGET_COMPILE_PDB = CMakeFiles\VideoRenderer.dir\
   TARGET_FILE = VideoRenderer.exe
   TARGET_IMPLIB = VideoRenderer.lib
   TARGET_PDB = VideoRenderer.pdb
+
+
+#############################################
+# Utility command for package
+
+build CMakeFiles/package.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build package: phony CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake D:/Product/Code/VideoEngine/EngineCpp/build/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build package_source: phony CMakeFiles/package_source.util
 
 
 #############################################
@@ -371,17 +417,1140 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 
 #############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+
+#############################################
 # Custom command for embedded_files.cpp
 
-build embedded_files.cpp | ${cmake_ninja_workdir}embedded_files.cpp: CUSTOM_COMMAND D$:/Product/Code/VideoEngine/EngineCpp/generate.js D$:/Product/Code/VideoEngine/EngineCpp/shader/blurFragment.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/blurVertex.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/fragment.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/loadingFragment.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/loadingVertex.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/outlineFragment.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/outlineVertex.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/smoothFragment.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/smoothVertex.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/standFragment.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/standVertex.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/vertex.glsl
+build embedded_files.cpp | ${cmake_ninja_workdir}embedded_files.cpp: CUSTOM_COMMAND D$:/Product/Code/VideoEngine/EngineCpp/generate.js D$:/Product/Code/VideoEngine/EngineCpp/shader/blurFragment.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/blurVertex.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/fragment.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/outlineFragment.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/outlineVertex.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/standFragment.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/standVertex.glsl D$:/Product/Code/VideoEngine/EngineCpp/shader/vertex.glsl || thirdPart/freetype/freetyped.lib thirdPart/glfw-3.4/src/glfw3.lib
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\nodejs\node.exe" D:/Product/Code/VideoEngine/EngineCpp/generate.js D:/Product/Code/VideoEngine/EngineCpp/shader D:/Product/Code/VideoEngine/EngineCpp/build/embedded_files.cpp"
   DESC = Generating embedded_files.cpp from shader using Node.js
   restat = 1
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/Product/Code/VideoEngine/EngineCpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target freetype
+
+
+#############################################
+# Order-only phony target for freetype
+
+build cmake_object_order_depends_target_freetype: phony || .
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/autofit/autofit.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/autofit/autofit.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\autofit\autofit.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\autofit
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftbase.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftbase.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftbase.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftbbox.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftbbox.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftbbox.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftbdf.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftbdf.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftbdf.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftbitmap.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftbitmap.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftbitmap.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftcid.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftcid.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftcid.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftfstype.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftfstype.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftfstype.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftgasp.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftgasp.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftgasp.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftglyph.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftglyph.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftglyph.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftgxval.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftgxval.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftgxval.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftinit.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftinit.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftinit.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftmm.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftmm.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftmm.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftotval.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftotval.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftotval.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftpatent.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftpatent.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftpatent.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftpfr.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftpfr.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftpfr.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftstroke.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftstroke.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftstroke.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftsynth.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftsynth.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftsynth.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/fttype1.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/fttype1.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\fttype1.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftwinfnt.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftwinfnt.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftwinfnt.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/bdf/bdf.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/bdf/bdf.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\bdf\bdf.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\bdf
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/bzip2/ftbzip2.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\bzip2\ftbzip2.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\bzip2
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/cache/ftcache.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/cache/ftcache.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\cache\ftcache.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\cache
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/cff/cff.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/cff/cff.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\cff\cff.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\cff
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/cid/type1cid.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/cid/type1cid.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\cid\type1cid.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\cid
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/gzip/ftgzip.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/gzip/ftgzip.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\gzip\ftgzip.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\gzip
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/lzw/ftlzw.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/lzw/ftlzw.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\lzw\ftlzw.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\lzw
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/pcf/pcf.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/pcf/pcf.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\pcf\pcf.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\pcf
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/pfr/pfr.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/pfr/pfr.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\pfr\pfr.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\pfr
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/psaux/psaux.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/psaux/psaux.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\psaux\psaux.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\psaux
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/pshinter/pshinter.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/pshinter/pshinter.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\pshinter\pshinter.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\pshinter
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/psnames/psnames.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/psnames/psnames.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\psnames\psnames.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\psnames
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/raster/raster.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/raster/raster.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\raster\raster.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\raster
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/sdf/sdf.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/sdf/sdf.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\sdf\sdf.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\sdf
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/sfnt/sfnt.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/sfnt/sfnt.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\sfnt\sfnt.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\sfnt
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/smooth/smooth.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/smooth/smooth.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\smooth\smooth.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\smooth
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/svg/svg.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/svg/svg.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\svg\svg.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\svg
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/truetype/truetype.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/truetype/truetype.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\truetype\truetype.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\truetype
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/type1/type1.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/type1/type1.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\type1\type1.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\type1
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/type42/type42.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/type42/type42.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\type42\type42.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\type42
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/winfonts/winfnt.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/winfonts/winfnt.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\winfonts\winfnt.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\winfonts
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/builds/windows/ftsystem.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/builds/windows/ftsystem.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\builds\windows\ftsystem.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\builds\windows
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/builds/windows/ftdebug.c.obj: C_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/builds/windows/ftdebug.c || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\builds\windows\ftdebug.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\builds\windows
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+build thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftver.rc.res: RC_COMPILER__freetype_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/src/base/ftver.rc || cmake_object_order_depends_target_freetype
+  CONFIG = Debug
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = thirdPart\freetype\CMakeFiles\freetype.dir\src\base\ftver.rc.res.d
+  INCLUDES = -I D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -I D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -I D:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -I D:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -I D:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = thirdPart\freetype\CMakeFiles\freetype.dir\src\base
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target freetype
+
+
+#############################################
+# Link the static library thirdPart\freetype\freetyped.lib
+
+build thirdPart/freetype/freetyped.lib: C_STATIC_LIBRARY_LINKER__freetype_Debug thirdPart/freetype/CMakeFiles/freetype.dir/src/autofit/autofit.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftbase.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftbbox.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftbdf.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftbitmap.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftcid.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftfstype.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftgasp.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftglyph.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftgxval.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftinit.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftmm.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftotval.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftpatent.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftpfr.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftstroke.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftsynth.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/fttype1.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftwinfnt.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/bdf/bdf.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/cache/ftcache.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/cff/cff.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/cid/type1cid.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/gzip/ftgzip.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/lzw/ftlzw.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/pcf/pcf.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/pfr/pfr.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/psaux/psaux.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/pshinter/pshinter.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/psnames/psnames.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/raster/raster.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/sdf/sdf.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/sfnt/sfnt.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/smooth/smooth.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/svg/svg.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/truetype/truetype.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/type1/type1.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/type42/type42.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/winfonts/winfnt.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/builds/windows/ftsystem.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/builds/windows/ftdebug.c.obj thirdPart/freetype/CMakeFiles/freetype.dir/src/base/ftver.rc.res
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  OBJECT_DIR = thirdPart\freetype\CMakeFiles\freetype.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = thirdPart\freetype\CMakeFiles\freetype.dir\freetype.pdb
+  TARGET_FILE = thirdPart\freetype\freetyped.lib
+  TARGET_PDB = thirdPart\freetype\freetyped.pdb
+
+
+#############################################
+# Utility command for package
+
+build thirdPart/freetype/CMakeFiles/package.util: CUSTOM_COMMAND thirdPart/freetype/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build thirdPart/freetype/package: phony thirdPart/freetype/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build thirdPart/freetype/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake D:/Product/Code/VideoEngine/EngineCpp/build/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build thirdPart/freetype/package_source: phony thirdPart/freetype/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build thirdPart/freetype/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\freetype && "C:\Program Files\CMake\bin\cmake-gui.exe" -SD:\Product\Code\VideoEngine\EngineCpp -BD:\Product\Code\VideoEngine\EngineCpp\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build thirdPart/freetype/edit_cache: phony thirdPart/freetype/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build thirdPart/freetype/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\freetype && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SD:\Product\Code\VideoEngine\EngineCpp -BD:\Product\Code\VideoEngine\EngineCpp\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build thirdPart/freetype/rebuild_cache: phony thirdPart/freetype/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build thirdPart/freetype/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build thirdPart/freetype/CMakeFiles/install.util: CUSTOM_COMMAND thirdPart/freetype/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\freetype && "C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build thirdPart/freetype/install: phony thirdPart/freetype/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build thirdPart/freetype/CMakeFiles/install/local.util: CUSTOM_COMMAND thirdPart/freetype/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\freetype && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build thirdPart/freetype/install/local: phony thirdPart/freetype/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build thirdPart/freetype/CMakeFiles/install/strip.util: CUSTOM_COMMAND thirdPart/freetype/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\freetype && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build thirdPart/freetype/install/strip: phony thirdPart/freetype/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/Product/Code/VideoEngine/EngineCpp/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for uninstall
+
+build thirdPart/glfw-3.4/uninstall: phony thirdPart/glfw-3.4/CMakeFiles/uninstall
+
+
+#############################################
+# Utility command for package
+
+build thirdPart/glfw-3.4/CMakeFiles/package.util: CUSTOM_COMMAND thirdPart/glfw-3.4/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build thirdPart/glfw-3.4/package: phony thirdPart/glfw-3.4/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build thirdPart/glfw-3.4/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake D:/Product/Code/VideoEngine/EngineCpp/build/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build thirdPart/glfw-3.4/package_source: phony thirdPart/glfw-3.4/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build thirdPart/glfw-3.4/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\glfw-3.4 && "C:\Program Files\CMake\bin\cmake-gui.exe" -SD:\Product\Code\VideoEngine\EngineCpp -BD:\Product\Code\VideoEngine\EngineCpp\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build thirdPart/glfw-3.4/edit_cache: phony thirdPart/glfw-3.4/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build thirdPart/glfw-3.4/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\glfw-3.4 && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SD:\Product\Code\VideoEngine\EngineCpp -BD:\Product\Code\VideoEngine\EngineCpp\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build thirdPart/glfw-3.4/rebuild_cache: phony thirdPart/glfw-3.4/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build thirdPart/glfw-3.4/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build thirdPart/glfw-3.4/CMakeFiles/install.util: CUSTOM_COMMAND thirdPart/glfw-3.4/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\glfw-3.4 && "C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build thirdPart/glfw-3.4/install: phony thirdPart/glfw-3.4/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build thirdPart/glfw-3.4/CMakeFiles/install/local.util: CUSTOM_COMMAND thirdPart/glfw-3.4/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\glfw-3.4 && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build thirdPart/glfw-3.4/install/local: phony thirdPart/glfw-3.4/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build thirdPart/glfw-3.4/CMakeFiles/install/strip.util: CUSTOM_COMMAND thirdPart/glfw-3.4/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\glfw-3.4 && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build thirdPart/glfw-3.4/install/strip: phony thirdPart/glfw-3.4/CMakeFiles/install/strip.util
+
+
+#############################################
+# Custom command for thirdPart\glfw-3.4\CMakeFiles\uninstall
+
+build thirdPart/glfw-3.4/CMakeFiles/uninstall | ${cmake_ninja_workdir}thirdPart/glfw-3.4/CMakeFiles/uninstall: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\glfw-3.4 && "C:\Program Files\CMake\bin\cmake.exe" -P D:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/cmake_uninstall.cmake"
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target glfw
+
+
+#############################################
+# Order-only phony target for glfw
+
+build cmake_object_order_depends_target_glfw: phony || .
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/context.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\context.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/init.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\init.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/input.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\input.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/monitor.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\monitor.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/platform.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/platform.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\platform.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/vulkan.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\vulkan.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/window.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\window.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/egl_context.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\egl_context.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/osmesa_context.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\osmesa_context.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/null_init.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/null_init.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\null_init.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/null_monitor.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\null_monitor.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/null_window.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/null_window.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\null_window.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/null_joystick.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\null_joystick.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/win32_module.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\win32_module.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/win32_time.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\win32_time.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/win32_thread.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\win32_thread.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/win32_init.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\win32_init.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/win32_joystick.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\win32_joystick.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/win32_monitor.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\win32_monitor.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/win32_window.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\win32_window.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+build thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/wgl_context.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\wgl_context.c.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall
+  INCLUDES = -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target glfw
+
+
+#############################################
+# Link the static library thirdPart\glfw-3.4\src\glfw3.lib
+
+build thirdPart/glfw-3.4/src/glfw3.lib: C_STATIC_LIBRARY_LINKER__glfw_Debug thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/context.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/init.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/input.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/monitor.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/platform.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/vulkan.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/window.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/egl_context.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/osmesa_context.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/null_init.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/null_monitor.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/null_window.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/null_joystick.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/win32_module.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/win32_time.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/win32_thread.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/win32_init.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/win32_joystick.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/win32_monitor.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/win32_window.c.obj thirdPart/glfw-3.4/src/CMakeFiles/glfw.dir/wgl_context.c.obj
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  OBJECT_DIR = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = thirdPart\glfw-3.4\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_FILE = thirdPart\glfw-3.4\src\glfw3.lib
+  TARGET_PDB = thirdPart\glfw-3.4\src\glfw3.pdb
+
+
+#############################################
+# Utility command for update_mappings
+
+build thirdPart/glfw-3.4/src/update_mappings: phony thirdPart/glfw-3.4/src/CMakeFiles/update_mappings
+
+
+#############################################
+# Utility command for package
+
+build thirdPart/glfw-3.4/src/CMakeFiles/package.util: CUSTOM_COMMAND thirdPart/glfw-3.4/src/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build thirdPart/glfw-3.4/src/package: phony thirdPart/glfw-3.4/src/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build thirdPart/glfw-3.4/src/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake D:/Product/Code/VideoEngine/EngineCpp/build/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build thirdPart/glfw-3.4/src/package_source: phony thirdPart/glfw-3.4/src/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build thirdPart/glfw-3.4/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\glfw-3.4\src && "C:\Program Files\CMake\bin\cmake-gui.exe" -SD:\Product\Code\VideoEngine\EngineCpp -BD:\Product\Code\VideoEngine\EngineCpp\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build thirdPart/glfw-3.4/src/edit_cache: phony thirdPart/glfw-3.4/src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build thirdPart/glfw-3.4/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\glfw-3.4\src && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SD:\Product\Code\VideoEngine\EngineCpp -BD:\Product\Code\VideoEngine\EngineCpp\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build thirdPart/glfw-3.4/src/rebuild_cache: phony thirdPart/glfw-3.4/src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build thirdPart/glfw-3.4/src/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build thirdPart/glfw-3.4/src/CMakeFiles/install.util: CUSTOM_COMMAND thirdPart/glfw-3.4/src/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\glfw-3.4\src && "C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build thirdPart/glfw-3.4/src/install: phony thirdPart/glfw-3.4/src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build thirdPart/glfw-3.4/src/CMakeFiles/install/local.util: CUSTOM_COMMAND thirdPart/glfw-3.4/src/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\glfw-3.4\src && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build thirdPart/glfw-3.4/src/install/local: phony thirdPart/glfw-3.4/src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build thirdPart/glfw-3.4/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND thirdPart/glfw-3.4/src/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\build\thirdPart\glfw-3.4\src && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build thirdPart/glfw-3.4/src/install/strip: phony thirdPart/glfw-3.4/src/CMakeFiles/install/strip.util
+
+
+#############################################
+# Custom command for thirdPart\glfw-3.4\src\CMakeFiles\update_mappings
+
+build thirdPart/glfw-3.4/src/CMakeFiles/update_mappings | ${cmake_ninja_workdir}thirdPart/glfw-3.4/src/CMakeFiles/update_mappings: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Product\Code\VideoEngine\EngineCpp\thirdPart\glfw-3.4\src && "C:\Program Files\CMake\bin\cmake.exe" -P D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/CMake/GenerateMappings.cmake mappings.h.in mappings.h"
+  DESC = Updating gamepad mappings from upstream repository
+
+# =============================================================================
 # Target aliases.
 
 build VideoRenderer: phony VideoRenderer.exe
+
+build freetype: phony thirdPart/freetype/freetyped.lib
+
+build freetyped.lib: phony thirdPart/freetype/freetyped.lib
+
+build glfw: phony thirdPart/glfw-3.4/src/glfw3.lib
+
+build glfw3.lib: phony thirdPart/glfw-3.4/src/glfw3.lib
+
+build uninstall: phony thirdPart/glfw-3.4/uninstall
+
+build update_mappings: phony thirdPart/glfw-3.4/src/update_mappings
 
 # =============================================================================
 # Folder targets.
@@ -391,7 +1560,28 @@ build VideoRenderer: phony VideoRenderer.exe
 #############################################
 # Folder: D:/Product/Code/VideoEngine/EngineCpp/build
 
-build all: phony VideoRenderer.exe
+build all: phony VideoRenderer.exe thirdPart/freetype/all thirdPart/glfw-3.4/all
+
+# =============================================================================
+
+#############################################
+# Folder: D:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype
+
+build thirdPart/freetype/all: phony thirdPart/freetype/freetyped.lib
+
+# =============================================================================
+
+#############################################
+# Folder: D:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4
+
+build thirdPart/glfw-3.4/all: phony thirdPart/glfw-3.4/src/all
+
+# =============================================================================
+
+#############################################
+# Folder: D:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src
+
+build thirdPart/glfw-3.4/src/all: phony thirdPart/glfw-3.4/src/glfw3.lib
 
 # =============================================================================
 # Built-in targets
@@ -400,14 +1590,14 @@ build all: phony VideoRenderer.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja D$:/Product/Code/VideoEngine/EngineCpp/build/cmake_install.cmake: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/Clang-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/Clang-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/Clang.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/LLD-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/LLD-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/LLD.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/MSVC.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-LLD-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-LLD-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-LLD.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-MSVC.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Clang-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Clang-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Clang.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.0.2/CMakeCCompiler.cmake CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeRCCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake D$:/Product/Code/VideoEngine/EngineCpp/CMakeLists.txt
+build build.ninja D$:/Product/Code/VideoEngine/EngineCpp/build/cmake_install.cmake D$:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/cmake_install.cmake D$:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/cmake_install.cmake D$:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src/cmake_install.cmake: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-4.0/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeDependentOption.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CPack.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CPackComponent.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CheckIncludeFile.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/Clang-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/Clang-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/Clang.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/FindBZip2.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/FindPNG.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/FindPkgConfig.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/FindZLIB.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/GNUInstallDirs.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/LLD-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/LLD-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/LLD.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/MSVC.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-LLD-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-LLD-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-LLD.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-MSVC.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Clang-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Clang-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Clang.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/SelectLibraryConfigurations.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/WriteBasicConfigVersionFile.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/4.0.2/CMakeCCompiler.cmake CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeRCCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake D$:/Product/Code/VideoEngine/EngineCpp/CMakeLists.txt D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/CMakeLists.txt D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/builds/cmake/FindBrotliDec.cmake D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/builds/cmake/FindHarfBuzz.cmake D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/CMakeLists.txt D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/CMake/cmake_uninstall.cmake.in D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/CMake/glfw3.pc.in D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/CMake/glfw3Config.cmake.in D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/Clang-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/Clang-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/Clang.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/LLD-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/LLD-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/LLD.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/MSVC.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-LLD-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-LLD-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-LLD.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-MSVC.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Clang-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Clang-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Clang.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.0.2/CMakeCCompiler.cmake CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeRCCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake D$:/Product/Code/VideoEngine/EngineCpp/CMakeLists.txt: phony
+build C$:/Program$ Files/CMake/share/cmake-4.0/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeDependentOption.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CPack.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CPackComponent.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CheckIncludeFile.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/Clang-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/Clang-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/Clang.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/FindBZip2.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/FindPNG.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/FindPkgConfig.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/FindZLIB.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/GNUInstallDirs.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/LLD-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/LLD-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/LLD.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Linker/MSVC.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-LLD-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-LLD-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-LLD.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-MSVC.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Clang-C.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Clang-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Clang.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/SelectLibraryConfigurations.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/WriteBasicConfigVersionFile.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/4.0.2/CMakeCCompiler.cmake CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeRCCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake D$:/Product/Code/VideoEngine/EngineCpp/CMakeLists.txt D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/CMakeLists.txt D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/builds/cmake/FindBrotliDec.cmake D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/builds/cmake/FindHarfBuzz.cmake D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/CMakeLists.txt D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/CMake/cmake_uninstall.cmake.in D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/CMake/glfw3.pc.in D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/CMake/glfw3Config.cmake.in D$:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src/CMakeLists.txt: phony
 
 
 #############################################

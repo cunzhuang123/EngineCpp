@@ -1,7 +1,10 @@
 {
 	"InstallScripts" : 
 	[
-		"D:/Product/Code/VideoEngine/EngineCpp/build/cmake_install.cmake"
+		"D:/Product/Code/VideoEngine/EngineCpp/build/cmake_install.cmake",
+		"D:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/cmake_install.cmake",
+		"D:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/cmake_install.cmake",
+		"D:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

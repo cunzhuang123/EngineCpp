@@ -1,152 +1,548 @@
 [
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\nanovg\\nanovg.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\nanovg\\nanovg.c",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\VideoRenderer.dir\\thirdPart\\glad\\src\\glad.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glad\\src\\glad.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glad\\src\\glad.c",
+  "output": "CMakeFiles\\VideoRenderer.dir\\thirdPart\\glad\\src\\glad.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\VideoRenderer.dir\\cpp\\tinyexpr\\tinyexpr.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\tinyexpr\\tinyexpr.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\tinyexpr\\tinyexpr.c",
+  "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\tinyexpr\\tinyexpr.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\VideoRenderer.dir\\cpp\\nanovg\\nanovg.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\nanovg\\nanovg.c",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\nanovg\\nanovg.c",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\nanovg\\nanovg.c.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\nanovg\\nanovg_impl.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\nanovg\\nanovg_impl.c",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\VideoRenderer.dir\\cpp\\nanovg\\nanovg_impl.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\nanovg\\nanovg_impl.c",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\nanovg\\nanovg_impl.c",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\nanovg\\nanovg_impl.c.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ExpressionCache.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ExpressionCache.cpp",
-  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ExpressionCache.cpp",
-  "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ExpressionCache.cpp.obj"
-},
-{
-  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ExpressTool.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ExpressTool.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ExpressTool.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ExpressTool.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ExpressTool.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ExpressTool.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\FFmpegWriter.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\FFmpegWriter.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\FFmpegWriter.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\FFmpegWriter.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\FFmpegWriter.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\FFmpegWriter.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\RendererResource.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\RendererResource.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\RendererResource.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\RendererResource.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\RendererResource.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\RendererResource.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\TextResource.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\TextResource.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\TextResource.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\TextResource.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\TextResource.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\TextResource.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ImageResource.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ImageResource.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ImageResource.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ImageResource.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ImageResource.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ImageResource.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\Camera.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\Camera.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\Camera.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\Camera.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\Camera.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\Camera.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\Materials.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\Materials.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\Materials.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\Materials.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\Materials.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\Materials.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\RenderPass.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\RenderPass.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\RenderPass.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\RenderPass.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\RenderPass.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\RenderPass.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\RenderTargetPool.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\RenderTargetPool.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\RenderTargetPool.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\RenderTargetPool.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\RenderTargetPool.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\RenderTargetPool.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ShaderManager.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ShaderManager.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ShaderManager.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ShaderManager.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ShaderManager.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ShaderManager.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\VideoRenderer.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\VideoRenderer.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\VideoRenderer.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\VideoRenderer.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\VideoRenderer.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\VideoRenderer.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\TransitionRenderer.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\TransitionRenderer.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\TransitionRenderer.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\TransitionRenderer.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\TransitionRenderer.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\TransitionRenderer.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\PluginRenderer.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\PluginRenderer.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\PluginRenderer.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\PluginRenderer.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\PluginRenderer.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\PluginRenderer.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\VideoResource.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\VideoResource.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\VideoResource.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\VideoResource.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\VideoResource.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\VideoResource.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ScopedProfiler.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ScopedProfiler.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ScopedProfiler.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ScopedProfiler.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ScopedProfiler.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ScopedProfiler.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\Keyframe.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\Keyframe.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\Keyframe.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\Keyframe.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\Keyframe.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\Keyframe.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\TrackUtils.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\TrackUtils.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\TrackUtils.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\TrackUtils.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\TrackUtils.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\TrackUtils.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\CoreUtils.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\CoreUtils.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\CoreUtils.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\CoreUtils.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\CoreUtils.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\CoreUtils.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\Engine.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\Engine.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\Engine.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\Engine.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\Engine.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\Engine.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\Main.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\Main.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\Main.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\Main.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\Main.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\Main.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\CachedExpression.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\CachedExpression.cpp",
-  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\CachedExpression.cpp",
-  "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\CachedExpression.cpp.obj"
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ExpressionCache.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ExpressionCache.cpp",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\ExpressionCache.cpp",
+  "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\ExpressionCache.cpp.obj"
 },
 {
   "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
-  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glew-2.2.0/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4.bin.WIN64/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -finput-charset=utf-8 -fexec-charset=utf-8 -o CMakeFiles\\VideoRenderer.dir\\embedded_files.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\build\\embedded_files.cpp",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\cpp\\src\\CachedExprtk.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\CachedExprtk.cpp",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\cpp\\src\\CachedExprtk.cpp",
+  "output": "CMakeFiles\\VideoRenderer.dir\\cpp\\src\\CachedExprtk.cpp.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DPROJECT_ROOT_DIR=\\\"D:/Product/Code/VideoEngine/EngineCpp\\\" -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/ffmpeg/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include  -Os -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles\\VideoRenderer.dir\\embedded_files.cpp.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\build\\embedded_files.cpp",
   "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\build\\embedded_files.cpp",
   "output": "CMakeFiles\\VideoRenderer.dir\\embedded_files.cpp.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\autofit\\autofit.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\autofit\\autofit.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\autofit\\autofit.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\autofit\\autofit.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftbase.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftbase.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftbase.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftbase.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftbbox.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftbbox.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftbbox.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftbbox.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftbdf.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftbdf.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftbdf.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftbdf.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftbitmap.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftbitmap.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftbitmap.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftbitmap.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftcid.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftcid.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftcid.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftcid.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftfstype.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftfstype.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftfstype.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftfstype.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftgasp.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftgasp.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftgasp.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftgasp.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftglyph.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftglyph.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftglyph.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftglyph.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftgxval.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftgxval.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftgxval.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftgxval.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftinit.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftinit.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftinit.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftinit.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftmm.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftmm.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftmm.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftmm.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftotval.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftotval.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftotval.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftotval.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftpatent.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftpatent.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftpatent.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftpatent.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftpfr.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftpfr.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftpfr.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftpfr.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftstroke.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftstroke.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftstroke.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftstroke.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftsynth.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftsynth.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftsynth.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftsynth.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\fttype1.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\fttype1.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\fttype1.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\fttype1.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftwinfnt.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftwinfnt.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftwinfnt.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftwinfnt.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\bdf\\bdf.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\bdf\\bdf.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\bdf\\bdf.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\bdf\\bdf.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\bzip2\\ftbzip2.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\bzip2\\ftbzip2.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\bzip2\\ftbzip2.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\bzip2\\ftbzip2.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\cache\\ftcache.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\cache\\ftcache.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\cache\\ftcache.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\cache\\ftcache.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\cff\\cff.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\cff\\cff.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\cff\\cff.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\cff\\cff.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\cid\\type1cid.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\cid\\type1cid.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\cid\\type1cid.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\cid\\type1cid.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\gzip\\ftgzip.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\gzip\\ftgzip.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\gzip\\ftgzip.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\gzip\\ftgzip.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\lzw\\ftlzw.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\lzw\\ftlzw.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\lzw\\ftlzw.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\lzw\\ftlzw.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\pcf\\pcf.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\pcf\\pcf.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\pcf\\pcf.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\pcf\\pcf.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\pfr\\pfr.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\pfr\\pfr.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\pfr\\pfr.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\pfr\\pfr.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\psaux\\psaux.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\psaux\\psaux.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\psaux\\psaux.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\psaux\\psaux.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\pshinter\\pshinter.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\pshinter\\pshinter.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\pshinter\\pshinter.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\pshinter\\pshinter.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\psnames\\psnames.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\psnames\\psnames.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\psnames\\psnames.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\psnames\\psnames.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\raster\\raster.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\raster\\raster.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\raster\\raster.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\raster\\raster.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\sdf\\sdf.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\sdf\\sdf.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\sdf\\sdf.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\sdf\\sdf.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\sfnt\\sfnt.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\sfnt\\sfnt.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\sfnt\\sfnt.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\sfnt\\sfnt.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\smooth\\smooth.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\smooth\\smooth.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\smooth\\smooth.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\smooth\\smooth.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\svg\\svg.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\svg\\svg.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\svg\\svg.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\svg\\svg.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\truetype\\truetype.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\truetype\\truetype.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\truetype\\truetype.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\truetype\\truetype.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\type1\\type1.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\type1\\type1.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\type1\\type1.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\type1\\type1.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\type42\\type42.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\type42\\type42.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\type42\\type42.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\type42\\type42.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\winfonts\\winfnt.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\winfonts\\winfnt.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\winfonts\\winfnt.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\winfonts\\winfnt.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\builds\\windows\\ftsystem.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\builds\\windows\\ftsystem.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\builds\\windows\\ftsystem.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\builds\\windows\\ftsystem.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o thirdPart\\freetype\\CMakeFiles\\freetype.dir\\builds\\windows\\ftdebug.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\builds\\windows\\ftdebug.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\builds\\windows\\ftdebug.c",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\builds\\windows\\ftdebug.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "\"C:\\Program Files\\CMake\\bin\\cmake.exe\" -E cmake_llvm_rc D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftver.rc thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftver.rc.res.pp C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -DRC_INVOKED -I D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -I D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -I D:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -I D:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -I D:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config -x c -E -- D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftver.rc ++ C:\\PROGRA~1\\LLVM\\bin\\llvm-rc.exe -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -I SOURCE_DIR -I D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -I D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -I D:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include -I D:/Product/Code/VideoEngine/EngineCpp/thirdPart/freetype/include -I D:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/freetype/include/freetype/config /fo thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftver.rc.res thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftver.rc.res.pp",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\freetype\\src\\base\\ftver.rc",
+  "output": "thirdPart\\freetype\\CMakeFiles\\freetype.dir\\src\\base\\ftver.rc.res"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\context.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\context.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\context.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\context.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\init.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\init.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\init.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\init.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\input.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\input.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\input.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\input.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\monitor.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\monitor.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\monitor.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\monitor.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\platform.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\platform.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\platform.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\platform.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\vulkan.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\vulkan.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\vulkan.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\vulkan.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\window.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\window.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\window.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\window.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\egl_context.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\egl_context.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\egl_context.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\egl_context.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\osmesa_context.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\osmesa_context.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\osmesa_context.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\osmesa_context.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\null_init.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\null_init.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\null_init.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\null_init.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\null_monitor.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\null_monitor.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\null_monitor.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\null_monitor.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\null_window.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\null_window.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\null_window.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\null_window.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\null_joystick.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\null_joystick.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\null_joystick.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\null_joystick.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_module.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\win32_module.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\win32_module.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_module.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_time.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\win32_time.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\win32_time.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_time.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_thread.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\win32_thread.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\win32_thread.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_thread.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_init.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\win32_init.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\win32_init.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_init.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_joystick.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\win32_joystick.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\win32_joystick.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_joystick.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_monitor.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\win32_monitor.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\win32_monitor.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_monitor.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_window.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\win32_window.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\win32_window.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\win32_window.c.obj"
+},
+{
+  "directory": "D:/Product/Code/VideoEngine/EngineCpp/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glad/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glm -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/include -ID:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/src -ID:/Product/Code/VideoEngine/EngineCpp/build/thirdPart/glfw-3.4/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\wgl_context.c.obj -c D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\wgl_context.c",
+  "file": "D:\\Product\\Code\\VideoEngine\\EngineCpp\\thirdPart\\glfw-3.4\\src\\wgl_context.c",
+  "output": "thirdPart\\glfw-3.4\\src\\CMakeFiles\\glfw.dir\\wgl_context.c.obj"
 }
 ]

@@ -316,3 +316,147 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "thirdPart/glfw-3.4/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-frl3ie"
+      binary: "D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-frl3ie"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections"
+      CMAKE_MODULE_PATH: "D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-frl3ie'
+        
+        Run Build Command(s): C:/Tools/ninja.exe -v cmTC_b8636
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DCMAKE_HAVE_LIBC_PTHREAD  -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_b8636.dir/src.c.obj -MF CMakeFiles\\cmTC_b8636.dir\\src.c.obj.d -o CMakeFiles/cmTC_b8636.dir/src.c.obj -c D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-frl3ie/src.c
+        FAILED: CMakeFiles/cmTC_b8636.dir/src.c.obj 
+        C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DCMAKE_HAVE_LIBC_PTHREAD  -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_b8636.dir/src.c.obj -MF CMakeFiles\\cmTC_b8636.dir\\src.c.obj.d -o CMakeFiles/cmTC_b8636.dir/src.c.obj -c D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-frl3ie/src.c
+        D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-frl3ie/src.c:1:10: fatal error: 'pthread.h' file not found\x0d
+            1 | #include <pthread.h>\x0d
+              |          ^~~~~~~~~~~\x0d
+        1 error generated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "thirdPart/glfw-3.4/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-hm74kj"
+      binary: "D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-hm74kj"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections"
+      CMAKE_MODULE_PATH: "D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-hm74kj'
+        
+        Run Build Command(s): C:/Tools/ninja.exe -v cmTC_e7d26
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_e7d26.dir/CheckFunctionExists.c.obj -MF CMakeFiles\\cmTC_e7d26.dir\\CheckFunctionExists.c.obj.d -o CMakeFiles/cmTC_e7d26.dir/CheckFunctionExists.c.obj -c D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-hm74kj/CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang.exe -nostartfiles -nostdlib -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wl,--gc-sections  -Xlinker /subsystem:console -fuse-ld=lld-link CMakeFiles/cmTC_e7d26.dir/CheckFunctionExists.c.obj -o cmTC_e7d26.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_e7d26.lib -Xlinker /pdb:cmTC_e7d26.pdb -Xlinker /version:0.0   -lpthreads.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        FAILED: cmTC_e7d26.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang.exe -nostartfiles -nostdlib -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wl,--gc-sections  -Xlinker /subsystem:console -fuse-ld=lld-link CMakeFiles/cmTC_e7d26.dir/CheckFunctionExists.c.obj -o cmTC_e7d26.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_e7d26.lib -Xlinker /pdb:cmTC_e7d26.pdb -Xlinker /version:0.0   -lpthreads.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        lld-link: warning: ignoring unknown argument '--gc-sections'\x0d
+        lld-link: error: could not open 'pthreads.lib': no such file or directory\x0d
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "thirdPart/glfw-3.4/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-jmhzsj"
+      binary: "D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-jmhzsj"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections"
+      CMAKE_MODULE_PATH: "D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-jmhzsj'
+        
+        Run Build Command(s): C:/Tools/ninja.exe -v cmTC_dccd0
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_dccd0.dir/CheckFunctionExists.c.obj -MF CMakeFiles\\cmTC_dccd0.dir\\CheckFunctionExists.c.obj.d -o CMakeFiles/cmTC_dccd0.dir/CheckFunctionExists.c.obj -c D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-jmhzsj/CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang.exe -nostartfiles -nostdlib -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wl,--gc-sections  -Xlinker /subsystem:console -fuse-ld=lld-link CMakeFiles/cmTC_dccd0.dir/CheckFunctionExists.c.obj -o cmTC_dccd0.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_dccd0.lib -Xlinker /pdb:cmTC_dccd0.pdb -Xlinker /version:0.0   -lpthread.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        FAILED: cmTC_dccd0.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang.exe -nostartfiles -nostdlib -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wl,--gc-sections  -Xlinker /subsystem:console -fuse-ld=lld-link CMakeFiles/cmTC_dccd0.dir/CheckFunctionExists.c.obj -o cmTC_dccd0.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_dccd0.lib -Xlinker /pdb:cmTC_dccd0.pdb -Xlinker /version:0.0   -lpthread.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        lld-link: warning: ignoring unknown argument '--gc-sections'\x0d
+        lld-link: error: could not open 'pthread.lib': no such file or directory\x0d
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:136 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:179 (_threads_check_flag_pthread)"
+      - "thirdPart/glfw-3.4/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Check if compiler accepts -pthread"
+    directories:
+      source: "D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-96xupk"
+      binary: "D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-96xupk"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections"
+      CMAKE_MODULE_PATH: "D:/Product/Code/VideoEngine/EngineCpp/thirdPart/glfw-3.4/CMake/modules"
+    buildResult:
+      variable: "THREADS_HAVE_PTHREAD_ARG"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-96xupk'
+        
+        Run Build Command(s): C:/Tools/ninja.exe -v cmTC_84a2d
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_84a2d.dir/CheckForPthreads.c.obj -MF CMakeFiles\\cmTC_84a2d.dir\\CheckForPthreads.c.obj.d -o CMakeFiles/cmTC_84a2d.dir/CheckForPthreads.c.obj -c D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-96xupk/CheckForPthreads.c
+        FAILED: CMakeFiles/cmTC_84a2d.dir/CheckForPthreads.c.obj 
+        C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_84a2d.dir/CheckForPthreads.c.obj -MF CMakeFiles\\cmTC_84a2d.dir\\CheckForPthreads.c.obj.d -o CMakeFiles/cmTC_84a2d.dir/CheckForPthreads.c.obj -c D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-96xupk/CheckForPthreads.c
+        D:/Product/Code/VideoEngine/EngineCpp/build/CMakeFiles/CMakeScratch/TryCompile-96xupk/CheckForPthreads.c:1:10: fatal error: 'pthread.h' file not found\x0d
+            1 | #include <pthread.h>\x0d
+              |          ^~~~~~~~~~~\x0d
+        1 error generated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
