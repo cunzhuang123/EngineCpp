@@ -74,6 +74,13 @@ private:
     void updateCamera();
     void updateRenderer(std::shared_ptr<VideoRenderer> renderer, const nlohmann::json& sequence);
     bool isVideoResource(const std::string& filePath);
+    
+    // 播放控制
+    bool isPlaying;
+    bool isPaused;
+    
+    // 键盘事件处理
+    static void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
 };
 
 #endif // ENGINE_H
