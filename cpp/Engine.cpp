@@ -3,6 +3,7 @@
 #include "Engine.h"
 #include <cmath>
 #include <thread>
+#include <chrono>
 #include "src/ExpressTool.h"
 #include "src/ScopedProfiler.h"
 #include "Keyframe.h"
@@ -24,7 +25,9 @@ Engine::Engine()
       trackUtils(std::make_unique<TrackUtils>()),
       coreUtils(std::make_unique<CoreUtils>()),
       renderTargetWidth(0),
-      renderTargetHeight(0)
+      renderTargetHeight(0),
+      isPlaying(false),
+      isPaused(true)
 {
     camera = std::make_shared<Camera>();
     screenCamera = std::make_shared<Camera>();
@@ -85,6 +88,10 @@ bool Engine::Init(int width, int height, float globalRenderScale, bool isVisible
     this->window = window;
     this->renderTargetWidth = width;
     this->renderTargetHeight = height;
+    
+    // 设置键盘回调
+    glfwSetWindowUserPointer(window, this);
+    glfwSetKeyCallback(window, keyCallback);
 
 
     // ---------- 创建 1920×1080 离屏 FBO ----------
@@ -435,6 +442,20 @@ void Engine::updateRenderer(std::shared_ptr<VideoRenderer> renderer, const nlohm
 }
 
 
+// 键盘事件回调
+void Engine::keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods) {
+    if (key == GLFW_KEY_SPACE && action == GLFW_PRESS) {
+        Engine* engine = static_cast<Engine*>(glfwGetWindowUserPointer(window));
+        if (engine->isPaused) {
+            engine->isPaused = false;
+            engine->isPlaying = true;
+        } else {
+            engine->isPaused = true;
+            engine->isPlaying = false;
+        }
+    }
+}
+
 // 定义一个函数来判断文件是否为视频资源
 bool Engine::isVideoResource(const std::string& filePath) {
     // 定义支持的视频文件扩展名（小写）
@@ -696,10 +717,28 @@ void Engine::Play(double startTime, double endTime, double stepTime, bool isDebu
     currentTime = startTime;
     {
         ScopedProfiler profiler("Engine::Play Render");
+        
+        // 渲染第一帧并暂停
+        render(writer, sequences, index, nextIndex, pboIds, isDebug);
+        
         // 播放循环
         while (currentTime < endTime) {
-            currentTime += stepTime;
-            render(writer, sequences, index,  nextIndex, pboIds, isDebug);
+            // 处理事件
+            glfwPollEvents();
+            
+            // 如果未暂停，继续播放
+            if (!isPaused) {
+                currentTime += stepTime;
+                if (currentTime > endTime) {
+                    break;
+                }
+                render(writer, sequences, index, nextIndex, pboIds, isDebug);
+            } else {
+                // 暂停时仍需要渲染当前帧以保持显示
+                render(writer, sequences, index, nextIndex, pboIds, isDebug);
+                // 添加小延迟以避免CPU使用率过高
+                std::this_thread::sleep_for(std::chrono::milliseconds(16)); // 约60fps
+            }
         }
     }
 
